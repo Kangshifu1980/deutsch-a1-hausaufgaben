@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Block-Review 2 — Lektion 7–12</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 1.4; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #d97706; padding-bottom: 6px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 18px; font-weight: 700; color: #78350f; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11.5px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #fef3c7; color: #92400e; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.teil-title { font-size: 14px; font-weight: 800; letter-spacing: 0.4px; color: #78350f; margin: 2px 0 2px 0; }
+.teil-sub { font-size: 10.5px; color: #6b7280; margin-bottom: 10px; }
+.instr-de { font-size: 10.5px; color: #374151; font-style: italic; }
+.instr-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 6px; }
+.ubung-header { background: #78350f; color: white; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px 6px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 6px 6px; padding: 8px 10px; margin-bottom: 10px; }
+.fill-line { display: flex; align-items: baseline; gap: 5px; font-size: 11px; margin-bottom: 6px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 24px; font-weight: 700; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 70px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 320px; display: inline-block; height: 14px; }
+.vn-word { color: #0f766e; font-size: 9.5px; font-style: italic; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+table.vocab { width: 100%; border-collapse: collapse; margin-bottom: 4px; table-layout: fixed; }
+table.vocab th { background: #78350f; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #92400e; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10px; vertical-align: top; line-height: 1.25; }
+table.vocab tr:nth-child(even) td { background: #fffbeb; }
+table.vocab.compact td, table.vocab.compact th { padding: 2px 6px; }
+.lesetext { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; font-size: 11.5px; line-height: 1.65; color: #292524; }
+.lesetext p { margin-bottom: 8px; }
+.lesetext p:last-child { margin-bottom: 0; }
+.mc-block { margin-bottom: 8px; }
+.mc-frage { font-size: 11px; font-weight: 700; color: #78350f; margin-bottom: 3px; }
+.mc-optionen { display: flex; gap: 16px; font-size: 11px; color: #1a1a1a; margin-bottom: 6px; padding-left: 4px; flex-wrap: wrap; }
+.mc-optionen span { display: flex; align-items: center; gap: 4px; }
+.mc-kreis { display: inline-block; width: 10px; height: 10px; border: 1.3px solid #64748b; border-radius: 50%; flex-shrink: 0; }
+.rf-row { display: flex; align-items: center; gap: 10px; font-size: 11px; margin-bottom: 6px; }
+.rf-row .satz { flex: 1; }
+.rf-optionen { display: flex; gap: 10px; }
+.rf-optionen span { display: flex; align-items: center; gap: 3px; font-size: 10px; color: #64748b; }
+.rf-kreis { display: inline-block; width: 10px; height: 10px; border: 1.3px solid #64748b; border-radius: 50%; }
+.dialog-box { border: 0.5px solid #fde68a; border-radius: 6px; background: #fffbeb; padding: 8px 10px; margin-bottom: 8px; }
+.dialog-sub { font-size: 10.5px; font-weight: 700; color: #92400e; margin: 2px 0 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+.schreib-line { border-bottom: 1px solid #94a3b8; min-height: 20px; margin-bottom: 10px; font-size: 11px; padding-left: 4px; }
+.schreib-line .num { color: #64748b; font-weight: 700; }
+.formular { border: 1px solid #fde68a; border-radius: 8px; background: #fffbeb; padding: 10px 14px; margin-bottom: 10px; }
+.formular-zeile { display: flex; align-items: baseline; gap: 8px; font-size: 11px; margin-bottom: 8px; }
+.formular-label { min-width: 130px; font-weight: 700; color: #78350f; }
+.formular-vn { font-size: 9px; color: #0f766e; font-style: italic; margin-left: 4px; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 8px 12px; margin-top: 6px; }
+.antworten h4 { font-size: 11px; font-weight: 700; color: #14532d; margin-bottom: 4px; }
+.antworten p { font-size: 10.5px; color: #166534; margin-bottom: 5px; line-height: 1.5; }
+.footer { margin-top: 10px; padding-top: 5px; border-top: 0.5px solid #e2e8f0; font-size: 9.5px; color: #94a3b8; display: flex; justify-content: space-between; }
+.titelseite { text-align: center; padding-top: 45px; }
+.titelseite .flag { font-size: 40px; margin-bottom: 12px; }
+.titelseite h1 { font-size: 27px; color: #78350f; margin-bottom: 8px; }
+.titelseite h2 { font-size: 15px; color: #475569; font-weight: 500; margin-bottom: 4px; }
+.titelseite .vn { font-size: 13px; color: #0f766e; font-style: italic; margin-bottom: 22px; }
+.plan-table { width: 80%; margin: 0 auto; border-collapse: collapse; }
+.plan-table th { background: #78350f; color: white; font-size: 11px; padding: 7px 10px; text-align: left; }
+.plan-table td { padding: 7px 10px; font-size: 11px; border-bottom: 0.5px solid #e2e8f0; text-align: left; }
+.plan-table tr:nth-child(even) td { background: #fffbeb; }
+.lekt-tags { margin-top: 24px; font-size: 10.5px; color: #64748b; }
+.lekt-tag { display: inline-block; background: #fef3c7; color: #78350f; padding: 3px 10px; border-radius: 20px; margin: 3px 4px; font-weight: 600; }
+.block-banner { background: linear-gradient(90deg, #fef3c7, #fde68a); border: 1px solid #f59e0b; border-radius: 8px; padding: 10px 16px; margin-top: 22px; }
+.block-banner .titel { font-size: 13px; font-weight: 800; color: #78350f; margin-bottom: 3px; }
+.block-banner .text { font-size: 10.5px; color: #92400e; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════════════════════ SEITE 1 / 5 — TITEL ═════════════════════════════ -->
+<div class="page">
+  <div class="titelseite">
+    <div class="flag">📗</div>
+    <h1>Deutsch A1 — Block-Review 2</h1>
+    <h2>Alltag &amp; Wohnen — Lektion 7–12</h2>
+    <div class="vn">Kiểm tra tổng kết Khối 2: Đời sống hằng ngày &amp; Nơi ở — Bài 7–12</div>
+
+    <table class="plan-table">
+      <tr><th>Teil</th><th>Inhalt</th></tr>
+      <tr><td><strong>A</strong> — Leseverstehen</td><td>Lesetext · Richtig/Falsch · Multiple Choice · Informationen finden</td></tr>
+      <tr><td><strong>B</strong> — Grammatik</td><td>gemischte Übungen aus Lektion 7–12, abwechslungsreiche Formate</td></tr>
+      <tr><td><strong>C</strong> — Schreiben</td><td>Wohnung/Tagesablauf beschreiben · kurze Nachricht · Fragen beantworten</td></tr>
+      <tr><td><strong>D</strong> — Übersetzung &amp; Fehler</td><td>Übersetzungssätze · Fehler korrigieren</td></tr>
+    </table>
+
+    <div class="lekt-tags">
+      <div>Themen aus Lektion 7–12:</div>
+      <span class="lekt-tag">🍽️ Essen &amp; Trinken</span>
+      <span class="lekt-tag">🛒 Einkaufen</span>
+      <span class="lekt-tag">👕 Kleidung</span>
+      <span class="lekt-tag">🏠 Wohnung &amp; Möbel</span>
+      <span class="lekt-tag">⏰ Tagesablauf / Uhrzeit</span>
+    </div>
+
+    <div class="block-banner">
+      <div class="titel">🎯 Fokus dieses Block-Reviews</div>
+      <div class="text">Eine Alltagssituation beschreiben: Wohnung, Tagesablauf und Einkaufen — mit Akkusativ, möchten, trennbaren Verben und Uhrzeit.</div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 2 · Lektion 7–12</span>
+    <span>Seite 1 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 2 / 5 — TEIL A ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📗 Block-Review 2</h1>
+      <h2>Lektion 7–12 / Bài 7–12</h2>
+    </div>
+    <div class="badge">Teil A — Leseverstehen</div>
+  </div>
+
+  <div class="teil-title">TEIL A — LESEVERSTEHEN</div>
+  <div class="teil-sub">Đọc hiểu</div>
+
+  <div class="ubung-header">📖 Lies den Text / Đọc đoạn văn</div>
+  <div class="lesetext">
+    <p>Ich heiße Julia und wohne in einer kleinen Wohnung in München. Meine Wohnung hat zwei Zimmer: ein Schlafzimmer und ein Wohnzimmer. Das Bett steht im Schlafzimmer, und im Wohnzimmer steht ein großes Sofa. An der Wand hängt ein schönes Bild, und auf dem Boden liegt ein bunter Teppich. In der Küche steht ein kleiner Tisch mit zwei Stühlen.</p>
+    <p>Mein Tagesablauf ist immer ähnlich. Ich stehe um 6:30 Uhr auf und trinke einen Kaffee. Um 8 Uhr fängt meine Arbeit an. Ich arbeite bis 17 Uhr, dann kaufe ich oft noch schnell ein: Ich möchte frisches Brot, ein bisschen Käse und einen Apfel. Am Abend rufe ich manchmal meine Familie an, oder ich sehe fern.</p>
+    <p>Am Samstag gehe ich gern einkaufen. Ich habe nicht viel Geld, aber ich möchte eine neue Jacke kaufen. Die Jacke im Geschäft kostet 45 Euro — das finde ich okay. Am Sonntag habe ich frei und bleibe zu Hause. Ich koche gern und esse dann mit Freunden zusammen.</p>
+  </div>
+
+  <div class="ubung-header">✅ A1 — Richtig oder falsch? / Đúng hay sai?</div>
+  <div class="ubung-body">
+    <div class="rf-row"><span class="num">1.</span><span class="satz">Julia wohnt in Berlin.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">2.</span><span class="satz">Julias Sofa steht im Wohnzimmer.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">3.</span><span class="satz">Julia steht um 7 Uhr auf.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">4.</span><span class="satz">Julia möchte eine neue Jacke kaufen.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">5.</span><span class="satz">Am Sonntag arbeitet Julia.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+  </div>
+
+  <div class="ubung-header">🔘 A2 — Multiple Choice</div>
+  <div class="ubung-body">
+    <div class="mc-block">
+      <div class="mc-frage">1. Wo liegt der Teppich?</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span>a) an der Wand</span><span><span class="mc-kreis"></span>b) auf dem Boden</span><span><span class="mc-kreis"></span>c) im Schlafzimmer</span></div>
+    </div>
+    <div class="mc-block">
+      <div class="mc-frage">2. Wann fängt Julias Arbeit an?</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span>a) um 6:30 Uhr</span><span><span class="mc-kreis"></span>b) um 8 Uhr</span><span><span class="mc-kreis"></span>c) um 17 Uhr</span></div>
+    </div>
+    <div class="mc-block">
+      <div class="mc-frage">3. Was möchte Julia beim Einkaufen kaufen?</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span>a) nur Brot</span><span><span class="mc-kreis"></span>b) Brot, Käse und einen Apfel</span><span><span class="mc-kreis"></span>c) einen Tisch</span></div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🔍 A3 — Informationen finden / Tìm thông tin</div>
+  <div class="ubung-body">
+    <div class="instr-de">Beantworte die Fragen mit Informationen aus dem Text.</div>
+    <div class="instr-vn">Hãy trả lời các câu hỏi bằng thông tin trong bài đọc.</div>
+    <div class="fill-line"><span class="num">1.</span> Wie viel kostet die Jacke im Geschäft? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Was macht Julia am Sonntag? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Wo steht der Tisch in Julias Wohnung? <span class="blank-long"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 2 · Lektion 7–12</span>
+    <span>Seite 2 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 3 / 5 — TEIL B ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📗 Block-Review 2</h1>
+      <h2>Lektion 7–12 / Bài 7–12</h2>
+    </div>
+    <div class="badge">Teil B — Grammatik</div>
+  </div>
+
+  <div class="teil-title">TEIL B — GRAMMATIK</div>
+  <div class="teil-sub">Gemischte Übungen aus Lektion 7–12 — abwechslungsreiche Formate / Bài tập ngữ pháp tổng hợp — nhiều dạng khác nhau</div>
+
+  <div class="ubung-header">🔧 B1 — Possessivartikel &amp; „haben"</div>
+  <div class="ubung-body">
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Das ist <span class="blank"></span> Zimmer. <span class="vn-word">(mein)</span></div>
+        <div class="fill-line"><span class="num">2.</span> Ist das <span class="blank"></span> Wohnung? <span class="vn-word">(dein)</span></div>
+        <div class="fill-line"><span class="num">3.</span> Ich <span class="blank"></span> Hunger. <span class="vn-word">(haben)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> <span class="blank"></span> ihr Zeit? <span class="vn-word">(haben)</span></div>
+        <div class="fill-line"><span class="num">5.</span> Er <span class="blank"></span> ein neues Sofa. <span class="vn-word">(haben)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🛒 B2 — Akkusativ-Artikel</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schreibe den korrekten Akkusativ-Artikel + Nomen.</div>
+    <div class="instr-vn">Viết mạo từ Akkusativ đúng + danh từ.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Kaffee (der) → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">2.</span> Milch (die) → <span class="blank"></span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">3.</span> Brot (das) → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">4.</span> Apfel (der) → <span class="blank"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">👕 B3 — „möchten"</div>
+  <div class="ubung-body">
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> die Jacke. </div>
+        <div class="fill-line"><span class="num">2.</span> <span class="blank"></span> du den Pullover? </div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">3.</span> Wir <span class="blank"></span> die Schuhe. </div>
+        <div class="fill-line"><span class="num">4.</span> Was <span class="blank"></span> Sie? </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🏠 B4 — „stehen", „liegen" oder „hängen" + Präposition</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> Der Tisch <span class="blank"></span> <span class="blank"></span> Küche. </div>
+    <div class="fill-line"><span class="num">2.</span> Die Lampe <span class="blank"></span> <span class="blank"></span> Wand. </div>
+    <div class="fill-line"><span class="num">3.</span> Der Teppich <span class="blank"></span> <span class="blank"></span> Boden. </div>
+    <div class="fill-line"><span class="num">4.</span> Das Sofa <span class="blank"></span> <span class="blank"></span> Wohnzimmer. </div>
+  </div>
+
+  <div class="ubung-header">🔀 B5 — Trennbare Verben: Verbklammer</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> um 7 Uhr <span class="blank"></span>. <span class="vn-word">(aufstehen)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Der Kurs <span class="blank"></span> um 9 Uhr <span class="blank"></span>. <span class="vn-word">(anfangen)</span></div>
+    <div class="fill-line"><span class="num">3.</span> Wir <span class="blank"></span> am Samstag <span class="blank"></span>. <span class="vn-word">(einkaufen)</span></div>
+  </div>
+
+  <div class="ubung-header">🕘 B6 — Uhrzeit informell schreiben</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> 8:00 → <span class="blank"></span></div>
+    <div class="fill-line"><span class="num">2.</span> 8:30 → <span class="blank"></span></div>
+    <div class="fill-line"><span class="num">3.</span> 8:45 → <span class="blank"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 2 · Lektion 7–12</span>
+    <span>Seite 3 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 4 / 5 — TEIL C ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📗 Block-Review 2</h1>
+      <h2>Lektion 7–12 / Bài 7–12</h2>
+    </div>
+    <div class="badge">Teil C — Schreiben</div>
+  </div>
+
+  <div class="teil-title">TEIL C — SCHREIBEN</div>
+  <div class="teil-sub">Viết</div>
+
+  <div class="ubung-header">✏️ C1 — Beschreibe deine Wohnung ODER deinen Tagesablauf</div>
+  <div class="ubung-body">
+    <div class="instr-de">Wähle ein Thema und schreibe 5–6 vollständige Sätze. Benutze mindestens 2× „stehen/liegen/hängen" oder 2× ein trennbares Verb. Du kannst auch erfundene Daten benutzen.</div>
+    <div class="instr-vn">Chọn một chủ đề và viết 5–6 câu hoàn chỉnh. Dùng ít nhất 2 lần „stehen/liegen/hängen" hoặc 2 lần một động từ tách được. Bạn cũng có thể dùng thông tin tự nghĩ ra.</div>
+    <div class="schreib-line"><span class="num">1.</span></div>
+    <div class="schreib-line"><span class="num">2.</span></div>
+    <div class="schreib-line"><span class="num">3.</span></div>
+    <div class="schreib-line"><span class="num">4.</span></div>
+    <div class="schreib-line"><span class="num">5.</span></div>
+    <div class="schreib-line"><span class="num">6.</span></div>
+  </div>
+
+  <div class="ubung-header">💌 C2 — Kurze Nachricht: Einkauf</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schreibe eine kurze Nachricht an einen Freund über deinen Einkauf. Was möchtest du kaufen? Benutze „möchten" und Akkusativ-Artikel.</div>
+    <div class="instr-vn">Viết một tin nhắn ngắn cho bạn về việc mua sắm của bạn. Bạn muốn mua gì? Dùng „möchten" và mạo từ Akkusativ.</div>
+    <div class="schreib-line"><span class="num">1.</span></div>
+    <div class="schreib-line"><span class="num">2.</span></div>
+    <div class="schreib-line"><span class="num">3.</span></div>
+  </div>
+
+  <div class="ubung-header">💬 C3 — Einfache Fragen beantworten</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> Wann stehst du normalerweise auf? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Was möchtest du heute essen? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Was steht in deinem Wohnzimmer? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Gehst du gern einkaufen? <span class="blank-long"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 2 · Lektion 7–12</span>
+    <span>Seite 4 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 5 / 5 — TEIL D & ANTWORTEN ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📗 Block-Review 2</h1>
+      <h2>Lektion 7–12 / Bài 7–12</h2>
+    </div>
+    <div class="badge">Teil D — Übersetzung &amp; Fehler</div>
+  </div>
+
+  <div class="teil-title">TEIL D — ÜBERSETZUNG / FEHLER FINDEN</div>
+  <div class="teil-sub">Dịch câu &amp; sửa lỗi</div>
+
+  <div class="ubung-header">🌐 D1 — Übersetze ins Deutsche</div>
+  <div class="ubung-body">
+    <div class="schreib-line"><span class="num">1.</span> Tôi muốn mua một cái áo khoác mới. </div>
+    <div class="schreib-line"><span class="num">2.</span> Cái bàn ở trong bếp. </div>
+    <div class="schreib-line"><span class="num">3.</span> Tôi dậy lúc 7 giờ. </div>
+    <div class="schreib-line"><span class="num">4.</span> Chúng tôi có một căn hộ nhỏ. </div>
+  </div>
+
+  <div class="ubung-header">🔍 D2 — Fehler finden</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> Ich möchte der Apfel. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Die Lampe steht an der Wand. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Ich stehe auf um 7 Uhr. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Er hat kein Zeit. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+  </div>
+
+  <div class="antworten">
+    <h4>✅ ANTWORTEN / Đáp án</h4>
+    <p><strong>A1 (Richtig/Falsch):</strong> 1. falsch &nbsp; 2. richtig &nbsp; 3. falsch &nbsp; 4. richtig &nbsp; 5. falsch</p>
+    <p><strong>A2 (Multiple Choice):</strong> 1. b &nbsp; 2. b &nbsp; 3. b</p>
+    <p><strong>A3 (Informationen finden):</strong> 1. 45 Euro. &nbsp; 2. Sie hat frei und bleibt zu Hause / kocht und isst mit Freunden. &nbsp; 3. In der Küche.</p>
+    <p><strong>B1 (Possessivartikel/haben):</strong> 1. mein &nbsp; 2. deine &nbsp; 3. habe &nbsp; 4. Habt &nbsp; 5. hat</p>
+    <p><strong>B2 (Akkusativ-Artikel):</strong> 1. den Kaffee &nbsp; 2. die Milch &nbsp; 3. das Brot &nbsp; 4. den Apfel</p>
+    <p><strong>B3 (möchten):</strong> 1. möchte &nbsp; 2. Möchtest &nbsp; 3. möchten &nbsp; 4. möchten</p>
+    <p><strong>B4 (stehen/liegen/hängen):</strong> 1. steht / in der &nbsp; 2. hängt / an der &nbsp; 3. liegt / auf dem &nbsp; 4. steht / im</p>
+    <p><strong>B5 (Verbklammer):</strong> 1. stehe ... auf &nbsp; 2. fängt ... an &nbsp; 3. kaufen ... ein</p>
+    <p><strong>B6 (Uhrzeit informell):</strong> 1. Punkt acht &nbsp; 2. halb neun &nbsp; 3. Viertel vor neun</p>
+    <p><strong>C1, C2 &amp; C3:</strong> Freie Antwort — der Lehrer korrigiert individuell. <span style="font-style:italic;">Câu trả lời tự do — giáo viên chữa trực tiếp.</span></p>
+    <p><strong>D1 (Übersetzung):</strong> 1. Ich möchte eine neue Jacke kaufen. &nbsp; 2. Der Tisch steht in der Küche. &nbsp; 3. Ich stehe um 7 Uhr auf. &nbsp; 4. Wir haben eine kleine Wohnung.</p>
+    <p><strong>D2 (Fehler finden):</strong> 1. Ich möchte den Apfel. &nbsp; 2. Die Lampe hängt an der Wand. &nbsp; 3. Ich stehe um 7 Uhr auf. &nbsp; 4. Er hat keine Zeit.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 2 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 5 / 5</span>
+  </div>
+</div>
+
+</body>
+</html>

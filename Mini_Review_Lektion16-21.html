@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Mini-Review — Lektion 16–21</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 1.4; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #dc2626; padding-bottom: 6px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 18px; font-weight: 700; color: #7f1d1d; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11.5px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #fee2e2; color: #b91c1c; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.teil-title { font-size: 14px; font-weight: 800; letter-spacing: 0.4px; color: #7f1d1d; margin: 2px 0 2px 0; }
+.teil-sub { font-size: 10.5px; color: #6b7280; margin-bottom: 10px; }
+.section-title { font-size: 12px; font-weight: 700; letter-spacing: 0.6px; color: #7f1d1d; margin: 14px 0 6px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 3px; }
+.instr-de { font-size: 10.5px; color: #374151; font-style: italic; }
+.instr-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 6px; }
+.ubung-header { background: #7f1d1d; color: white; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px 6px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 6px 6px; padding: 8px 10px; margin-bottom: 10px; }
+.fill-line { display: flex; align-items: baseline; gap: 5px; font-size: 11px; margin-bottom: 6px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 24px; font-weight: 700; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 70px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 340px; display: inline-block; height: 14px; }
+.vn-word { color: #0f766e; font-size: 9.5px; font-style: italic; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+.wortsalat-block { margin-bottom: 10px; }
+.wortsalat { background: #fef2f2; border: 0.5px dashed #94a3b8; border-radius: 5px; padding: 4px 9px; font-size: 10.5px; color: #374151; margin-bottom: 3px; font-style: italic; }
+.wortsalat .vn-word { display: block; margin-top: 1px; }
+table.vocab { width: 100%; border-collapse: collapse; margin-bottom: 4px; table-layout: fixed; }
+table.vocab th { background: #7f1d1d; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #b91c1c; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10px; vertical-align: top; line-height: 1.25; }
+table.vocab tr:nth-child(even) td { background: #fef2f2; }
+table.vocab.compact td, table.vocab.compact th { padding: 2px 6px; }
+.hinweis { font-size: 10px; color: #374151; font-style: italic; margin-top: 4px; }
+.hinweis .vn-word { display: block; }
+.dialog-box { border: 0.5px solid #fecaca; border-radius: 6px; background: #fef2f2; padding: 8px 10px; margin-bottom: 8px; }
+.dialog-sub { font-size: 10.5px; font-weight: 700; color: #b91c1c; margin: 2px 0 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+.dialog-line { font-size: 11px; margin-bottom: 5px; }
+.dialog-line .speaker { font-weight: 700; color: #991b1b; margin-right: 4px; }
+.schreib-line { border-bottom: 1px solid #94a3b8; min-height: 22px; margin-bottom: 12px; font-size: 11px; padding-left: 4px; }
+.schreib-line .num { color: #64748b; font-weight: 700; }
+.mc-block { margin-bottom: 10px; }
+.mc-frage { font-size: 11px; font-weight: 700; color: #7f1d1d; margin-bottom: 3px; }
+.mc-vn { font-size: 10px; color: #0f766e; font-style: italic; font-weight: 400; margin-bottom: 3px; }
+.mc-optionen { display: flex; gap: 16px; font-size: 11px; color: #1a1a1a; margin-bottom: 8px; padding-left: 4px; }
+.mc-optionen span { display: flex; align-items: center; gap: 4px; }
+.mc-kreis { display: inline-block; width: 10px; height: 10px; border: 1.3px solid #64748b; border-radius: 50%; flex-shrink: 0; }
+.kat-box { border: 0.5px solid #cbd5e1; border-radius: 6px; padding: 8px 10px; min-height: 40px; margin-bottom: 4px; }
+.kat-label { font-size: 10.5px; font-weight: 700; color: #7f1d1d; margin-bottom: 4px; }
+.wortbank { background: #fef2f2; border: 0.5px dashed #b91c1c; border-radius: 6px; padding: 8px 10px; font-size: 11px; color: #374151; margin-bottom: 10px; line-height: 1.7; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 8px 12px; margin-top: 6px; }
+.antworten h4 { font-size: 11px; font-weight: 700; color: #14532d; margin-bottom: 4px; }
+.antworten p { font-size: 10.5px; color: #166534; margin-bottom: 5px; line-height: 1.5; }
+.footer { margin-top: 10px; padding-top: 5px; border-top: 0.5px solid #e2e8f0; font-size: 9.5px; color: #94a3b8; display: flex; justify-content: space-between; }
+.titelseite { text-align: center; padding-top: 50px; }
+.titelseite .flag { font-size: 40px; margin-bottom: 12px; }
+.titelseite h1 { font-size: 28px; color: #7f1d1d; margin-bottom: 8px; }
+.titelseite h2 { font-size: 15px; color: #475569; font-weight: 500; margin-bottom: 4px; }
+.titelseite .vn { font-size: 13px; color: #0f766e; font-style: italic; margin-bottom: 26px; }
+.plan-table { width: 78%; margin: 0 auto; border-collapse: collapse; }
+.plan-table th { background: #7f1d1d; color: white; font-size: 11px; padding: 7px 10px; text-align: left; }
+.plan-table td { padding: 7px 10px; font-size: 11px; border-bottom: 0.5px solid #e2e8f0; text-align: left; }
+.plan-table tr:nth-child(even) td { background: #fef2f2; }
+.lekt-tags { margin-top: 30px; font-size: 10.5px; color: #64748b; }
+.lekt-tag { display: inline-block; background: #fee2e2; color: #7f1d1d; padding: 3px 10px; border-radius: 20px; margin: 3px 4px; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════════════════════ SEITE 1 / 8 — TITEL ═════════════════════════════ -->
+<div class="page">
+  <div class="titelseite">
+    <div class="flag">🇩🇪</div>
+    <h1>Deutsch A1 — Mini-Review</h1>
+    <h2>Wiederholung: Lektion 16–21</h2>
+    <div class="vn">Ôn tập tổng hợp: Bài 16–21</div>
+
+    <table class="plan-table">
+      <tr><th>Teil</th><th>Inhalt</th></tr>
+      <tr><td><strong>A</strong> — Wortschatz</td><td>Zuordnen · Übersetzen · Synonyme · Kategorien</td></tr>
+      <tr><td><strong>B</strong> — Grammatik</td><td>gemischte Übungen aus allen 6 Lektionen</td></tr>
+      <tr><td><strong>C</strong> — Satzbau</td><td>Sätze bilden · umformen · Fehler finden</td></tr>
+      <tr><td><strong>D</strong> — Dialoge</td><td>Lücken · Antworten formulieren</td></tr>
+      <tr><td><strong>E</strong> — Übersetzung</td><td>Vietnamesisch → Deutsch</td></tr>
+    </table>
+
+    <div class="lekt-tags">
+      <div>Diese Wiederholung kombiniert Inhalte aus:</div>
+      <span class="lekt-tag">L16 · Wegbeschreibung / Imperativ</span>
+      <span class="lekt-tag">L17 · Wetter / unpersönliches „es"</span>
+      <span class="lekt-tag">L18 · Körper &amp; Gesundheit</span>
+      <span class="lekt-tag">L19 · Perfekt mit „haben"</span>
+      <span class="lekt-tag">L20 · Perfekt: „sein" oder „haben"</span>
+      <span class="lekt-tag">L21 · Unregelmäßige &amp; trennbare Partizipien</span>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 16–21</span>
+    <span>Seite 1 / 8</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 2 / 8 — TEIL A ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 16–21 / Ôn tập: Bài 16–21</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL A — WORTSCHATZ</div>
+  <div class="teil-sub">Từ vựng tổng hợp từ Bài 16–21</div>
+
+  <div class="ubung-header">🔗 A1 — Zuordnen / Nối từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schreibe den passenden Buchstaben in die mittlere Spalte. (Wörter aus mehreren Lektionen!)</div>
+    <div class="instr-vn">Hãy viết chữ cái phù hợp vào cột giữa. (Từ vựng từ nhiều bài khác nhau!)</div>
+    <table class="vocab compact">
+      <tr><th style="width:34%;">Deutsch</th><th style="width:10%;">Antwort</th><th style="width:56%;">Vietnamesisch</th></tr>
+      <tr><td>1. das Rathaus</td><td></td><td rowspan="8" style="vertical-align:top; border-left:0.5px solid #e2e8f0; padding-top:3px; line-height:1.5;">
+        a) hiệu thuốc &nbsp;·&nbsp; b) mùa xuân &nbsp;·&nbsp; c) sổ mũi &nbsp;·&nbsp; d) giông bão &nbsp;·&nbsp; e) tòa thị chính &nbsp;·&nbsp; f) nhà ga &nbsp;·&nbsp; g) cảm lạnh &nbsp;·&nbsp; h) sương mù
+      </td></tr>
+      <tr><td>2. der Schnupfen</td><td></td></tr>
+      <tr><td>3. der Nebel</td><td></td></tr>
+      <tr><td>4. die Apotheke</td><td></td></tr>
+      <tr><td>5. das Gewitter</td><td></td></tr>
+      <tr><td>6. die Erkältung</td><td></td></tr>
+      <tr><td>7. der Bahnhof</td><td></td></tr>
+      <tr><td>8. der Frühling</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="ubung-header">🌐 A2 — Übersetzen / Dịch từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Übersetze die Wörter in die jeweils andere Sprache.</div>
+    <div class="instr-vn">Hãy dịch các từ sang ngôn ngữ còn lại.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> die Kirche → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">2.</span> wolkig → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">3.</span> der Husten → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">4.</span> das Fieber → <span class="blank"></span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">5.</span> đau bụng → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">6.</span> nắng → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">7.</span> đi thẳng → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">8.</span> bảo tàng → <span class="blank"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🔄 A3 — Synonyme: zwei Muster, eine Bedeutung</div>
+  <div class="ubung-body">
+    <div class="instr-de">Verbinde jeden Satz im Muster „... tut weh" mit der gleichbedeutenden „-schmerzen"-Variante.</div>
+    <div class="instr-vn">Hãy nối mỗi câu theo mẫu „... tut weh" với câu „-schmerzen" có nghĩa tương đương.</div>
+    <table class="vocab compact">
+      <tr><th style="width:40%;">Satz</th><th style="width:10%;">Antwort</th><th style="width:50%;">Gleiche Bedeutung</th></tr>
+      <tr><td>1. Mein Bauch tut weh.</td><td></td><td rowspan="5" style="vertical-align:top; border-left:0.5px solid #e2e8f0; padding-top:3px; line-height:1.5;">
+        a) Ich habe Rückenschmerzen. &nbsp;·&nbsp; b) Ich habe Halsschmerzen. &nbsp;·&nbsp; c) Ich habe Kopfschmerzen. &nbsp;·&nbsp; d) Ich habe Bauchschmerzen. &nbsp;·&nbsp; e) Ich habe Beinschmerzen.
+      </td></tr>
+      <tr><td>2. Mein Kopf tut weh.</td><td></td></tr>
+      <tr><td>3. Meine Beine tun weh.</td><td></td></tr>
+      <tr><td>4. Mein Rücken tut weh.</td><td></td></tr>
+      <tr><td>5. Mein Hals tut weh.</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="ubung-header">🗂️ A4 — Kategorien / Phân loại từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Sortiere die Wörter aus der Wortbank in die richtige Kategorie.</div>
+    <div class="instr-vn">Hãy sắp xếp các từ trong ngân hàng từ vựng vào đúng nhóm.</div>
+    <div class="wortbank">
+      das Museum &nbsp;·&nbsp; stürmisch &nbsp;·&nbsp; der Husten &nbsp;·&nbsp; gestern &nbsp;·&nbsp; die Kirche &nbsp;·&nbsp; neblig &nbsp;·&nbsp; das Fieber &nbsp;·&nbsp; letzte Woche &nbsp;·&nbsp; der Bahnhof &nbsp;·&nbsp; windig &nbsp;·&nbsp; der Schnupfen &nbsp;·&nbsp; vorgestern
+    </div>
+    <div class="two-col">
+      <div>
+        <div class="kat-box"><div class="kat-label">Gebäude <span class="vn-word">(tòa nhà)</span></div></div>
+        <div class="kat-box"><div class="kat-label">Wetter <span class="vn-word">(thời tiết)</span></div></div>
+      </div>
+      <div>
+        <div class="kat-box"><div class="kat-label">Krankheiten &amp; Körper <span class="vn-word">(bệnh tật &amp; cơ thể)</span></div></div>
+        <div class="kat-box"><div class="kat-label">Zeitausdrücke (Perfekt) <span class="vn-word">(từ chỉ thời gian)</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 16–21</span>
+    <span>Seite 2 / 8</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 3 / 8 — TEIL B ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 16–21 / Ôn tập: Bài 16–21</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL B — GRAMMATIK</div>
+  <div class="teil-sub">Gemischte Übungen aus allen 6 Lektionen — bewusst <u>nicht</u> nach Lektionen sortiert! / Bài tập ngữ pháp tổng hợp — <u>không</u> sắp xếp theo bài học!</div>
+
+  <div class="ubung-header">🔀 B1 — Imperativ-Mix (du, ihr, Sie)</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde den Imperativ mit dem Verb und der Form in Klammern.</div>
+    <div class="instr-vn">Chia động từ theo thể mệnh lệnh với dạng trong ngoặc.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> <span class="blank"></span> geradeaus! <span class="vn-word">(gehen, du)</span></div>
+        <div class="fill-line"><span class="num">2.</span> <span class="blank"></span> die zweite Straße rechts! <span class="vn-word">(nehmen, Sie)</span></div>
+        <div class="fill-line"><span class="num">3.</span> <span class="blank"></span> viel Wasser! <span class="vn-word">(trinken, du)</span></div>
+        <div class="fill-line"><span class="num">4.</span> <span class="blank"></span> im Bett! <span class="vn-word">(bleiben, ihr)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">5.</span> <span class="blank"></span> eine Suppe! <span class="vn-word">(essen, Sie)</span></div>
+        <div class="fill-line"><span class="num">6.</span> <span class="blank"></span> den Arzt <span class="blank"></span>! <span class="vn-word">(anrufen, du)</span></div>
+        <div class="fill-line"><span class="num">7.</span> <span class="blank"></span> bis zur Ampel! <span class="vn-word">(fahren, ihr)</span></div>
+        <div class="fill-line"><span class="num">8.</span> <span class="blank"></span> der Straße! <span class="vn-word">(folgen, Sie)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🗺️ B2 — Präpositionen: Wegbeschreibung</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die passende Präposition (an ... vorbei, gegenüber von, zwischen, bis zu).</div>
+    <div class="instr-vn">Điền giới từ phù hợp (an ... vorbei, gegenüber von, zwischen, bis zu).</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Die Post ist <span class="blank"></span> dem Rathaus.</div>
+        <div class="fill-line"><span class="num">2.</span> Gehen Sie <span class="blank"></span> der Schule <span class="blank"></span>.</div>
+        <div class="fill-line"><span class="num">3.</span> Das Café liegt <span class="blank"></span> der Bank und der Apotheke.</div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Fahren Sie <span class="blank"></span> zur Kreuzung.</div>
+        <div class="fill-line"><span class="num">5.</span> Der Park liegt <span class="blank"></span> dem Museum und dem Bahnhof.</div>
+        <div class="fill-line"><span class="num">6.</span> Die Kirche ist <span class="blank"></span> dem Krankenhaus.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 16–21</span>
+    <span>Seite 3 / 8</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 4 / 8 — TEIL B Forts. ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 16–21 / Ôn tập: Bài 16–21</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="ubung-header">🌦️ B3 — Unpersönliches „es" &amp; Wetterverben</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze je nach Lücke „es" oder die richtige Verbform.</div>
+    <div class="instr-vn">Điền „es" hoặc dạng động từ đúng, tùy theo chỗ trống.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> <span class="blank"></span> regnet heute den ganzen Tag.</div>
+        <div class="fill-line"><span class="num">2.</span> Im Winter <span class="blank"></span> es oft. <span class="vn-word">(schneien)</span></div>
+        <div class="fill-line"><span class="num">3.</span> Morgen <span class="blank"></span> es einen Sturm. <span class="vn-word">(geben)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Draußen <span class="blank"></span> es gerade. <span class="vn-word">(donnern)</span></div>
+        <div class="fill-line"><span class="num">5.</span> <span class="blank"></span> ist heute neblig.</div>
+        <div class="fill-line"><span class="num">6.</span> Am Nachmittag <span class="blank"></span> es sehr kalt. <span class="vn-word">(sein)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🩺 B4 — „mein/meine" + „tut/tun weh"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze mit dem passenden Possessivartikel oder der passenden Verbform.</div>
+    <div class="instr-vn">Điền mạo từ sở hữu hoặc dạng động từ phù hợp.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> <span class="blank"></span> Kopf tut weh. <span class="vn-word">(der Kopf)</span></div>
+        <div class="fill-line"><span class="num">2.</span> Meine Ohren <span class="blank"></span> weh.</div>
+        <div class="fill-line"><span class="num">3.</span> <span class="blank"></span> Nase tut weh. <span class="vn-word">(die Nase)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Ich habe Rücken<span class="blank"></span>, ich muss mich ausruhen.</div>
+        <div class="fill-line"><span class="num">5.</span> Meine Füße <span class="blank"></span> weh.</div>
+        <div class="fill-line"><span class="num">6.</span> <span class="blank"></span> Auge tut weh. <span class="vn-word">(das Auge)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 16–21</span>
+    <span>Seite 4 / 8</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 5 / 8 — TEIL B Forts. 2 ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 16–21 / Ôn tập: Bài 16–21</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="ubung-header">🔧 B5 — Perfekt mit „haben"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze „haben" UND das richtige Partizip Perfekt.</div>
+    <div class="instr-vn">Điền „haben" VÀ phân từ quá khứ đúng.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> gestern <span class="blank"></span>. <span class="vn-word">(kochen)</span></div>
+        <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> die Wohnung <span class="blank"></span>. <span class="vn-word">(putzen)</span></div>
+        <div class="fill-line"><span class="num">3.</span> Er <span class="blank"></span> lange <span class="blank"></span>. <span class="vn-word">(telefonieren)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Wir <span class="blank"></span> viel <span class="blank"></span>. <span class="vn-word">(lachen)</span></div>
+        <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> Musik <span class="blank"></span>. <span class="vn-word">(hören)</span></div>
+        <div class="fill-line"><span class="num">6.</span> Sie (Pl.) <span class="blank"></span> eine Pizza <span class="blank"></span>. <span class="vn-word">(kaufen)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">✈️ B6 — Perfekt: „sein" oder „haben"?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Entscheide, ob „sein" oder „haben" richtig ist, und ergänze das Partizip.</div>
+    <div class="instr-vn">Hãy quyết định „sein" hay „haben" đúng, và điền phân từ quá khứ.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> gestern nach Berlin <span class="blank"></span>. <span class="vn-word">(fahren)</span></div>
+        <div class="fill-line"><span class="num">2.</span> Wir <span class="blank"></span> den ganzen Tag <span class="blank"></span>. <span class="vn-word">(arbeiten)</span></div>
+        <div class="fill-line"><span class="num">3.</span> Du <span class="blank"></span> letzte Woche nach Rom <span class="blank"></span>. <span class="vn-word">(fliegen)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Er <span class="blank"></span> lange <span class="blank"></span>. <span class="vn-word">(telefonieren)</span></div>
+        <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> am Wochenende <span class="blank"></span>. <span class="vn-word">(wandern)</span></div>
+        <div class="fill-line"><span class="num">6.</span> Ich <span class="blank"></span> gestern im Hotel <span class="blank"></span>. <span class="vn-word">(bleiben)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🧩 B7 — Unregelmäßige &amp; trennbare Partizipien</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde das passende Partizip Perfekt.</div>
+    <div class="instr-vn">Hãy chia phân từ quá khứ phù hợp.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich habe ein Sandwich <span class="blank"></span>. <span class="vn-word">(essen)</span></div>
+        <div class="fill-line"><span class="num">2.</span> Du hast eine SMS <span class="blank"></span>. <span class="vn-word">(schreiben)</span></div>
+        <div class="fill-line"><span class="num">3.</span> Ich bin heute spät <span class="blank"></span>. <span class="vn-word">(aufstehen)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Wir haben am Freitag <span class="blank"></span>. <span class="vn-word">(einkaufen)</span></div>
+        <div class="fill-line"><span class="num">5.</span> Er hat einen Film <span class="blank"></span>. <span class="vn-word">(sehen)</span></div>
+        <div class="fill-line"><span class="num">6.</span> Die Kinder haben den ganzen Abend <span class="blank"></span>. <span class="vn-word">(fernsehen)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 16–21</span>
+    <span>Seite 5 / 8</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 6 / 8 — TEIL C ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 16–21 / Ôn tập: Bài 16–21</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL C — SATZBAU</div>
+  <div class="teil-sub">Cấu trúc câu</div>
+
+  <div class="ubung-header">🔀 C1 — Sätze bilden (Wortsalat)</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ordne die Wörter zu einem grammatisch korrekten Satz.</div>
+    <div class="instr-vn">Hãy sắp xếp các từ thành câu đúng ngữ pháp.</div>
+    <div class="wortsalat-block"><div class="wortsalat">1. links / geh / nach<span class="vn-word">Hãy đi sang trái!</span></div></div>
+    <div class="wortsalat-block"><div class="wortsalat">2. gestern / ich / gekocht / habe<span class="vn-word">Tôi đã nấu ăn hôm qua.</span></div></div>
+    <div class="wortsalat-block"><div class="wortsalat">3. weh / mein / tut / Kopf<span class="vn-word">Đầu tôi đau.</span></div></div>
+    <div class="wortsalat-block"><div class="wortsalat">4. geflogen / bist / du / nach Rom<span class="vn-word">Bạn đã bay đến Roma phải không?</span></div></div>
+    <div class="wortsalat-block"><div class="wortsalat">5. es / heute / regnet<span class="vn-word">Hôm nay trời mưa.</span></div></div>
+  </div>
+
+  <div class="ubung-header">🔁 C2 — Umformen</div>
+  <div class="ubung-body">
+    <div class="instr-de">Forme die Sätze wie angegeben um.</div>
+    <div class="instr-vn">Hãy chuyển đổi câu theo yêu cầu.</div>
+    <div class="fill-line"><span class="num">1.</span> Du gehst nach rechts. <span class="vn-word">→ Imperativ (du)</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Ich habe Kopfschmerzen. <span class="vn-word">→ Muster mit „tut weh"</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Ich koche. <span class="vn-word">→ Perfekt</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Ich fahre nach Berlin. <span class="vn-word">→ Perfekt</span> <span class="blank-long"></span></div>
+  </div>
+
+  <div class="ubung-header">🔍 C3 — Fehler finden</div>
+  <div class="ubung-body">
+    <div class="instr-de">Jeder Satz hat einen Fehler. Finde ihn und schreibe den Satz richtig.</div>
+    <div class="instr-vn">Mỗi câu có một lỗi sai. Hãy tìm và viết lại câu cho đúng.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich habe die Wohnung geputzen. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Ich bin gestern gearbeitet. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Er hat den Film geseht. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Wir sind heute eingekauft. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 16–21</span>
+    <span>Seite 6 / 8</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 7 / 8 — TEIL D ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 16–21 / Ôn tập: Bài 16–21</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL D — DIALOGE</div>
+  <div class="teil-sub">Hội thoại</div>
+
+  <div class="ubung-header">💬 D1 — Lücken ergänzen</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze den Dialog mit „haben"/„sein" und dem richtigen Partizip Perfekt.</div>
+    <div class="instr-vn">Điền vào đoạn hội thoại với „haben"/„sein" và phân từ quá khứ đúng.</div>
+    <div class="dialog-box">
+      <div class="dialog-sub">Ein Ausflug am Wochenende / Chuyến đi cuối tuần</div>
+      <div class="dialog-line"><span class="speaker">Lea:</span>Hallo Tom! Wie war dein Wochenende? <span class="blank"></span> du etwas Besonderes <span class="blank"></span>? <span class="vn-word">Cuối tuần bạn thế nào? Bạn đã làm gì đặc biệt không?</span></div>
+      <div class="dialog-line"><span class="speaker">Tom:</span>Ja! Ich <span class="blank"></span> nach Hamburg <span class="blank"></span>. <span class="vn-word">Có! Mình đã đi Hamburg.</span></div>
+      <div class="dialog-line"><span class="speaker">Lea:</span>Und wie war das Wetter dort? <span class="vn-word">Thời tiết ở đó thế nào?</span></div>
+      <div class="dialog-line"><span class="speaker">Tom:</span>Es <span class="blank"></span> leider den ganzen Tag <span class="blank"></span>. Aber ich <span class="blank"></span> trotzdem viel <span class="blank"></span>. <span class="vn-word">Tiếc là trời mưa cả ngày. Nhưng mình vẫn chụp ảnh rất nhiều.</span></div>
+      <div class="dialog-line"><span class="speaker">Lea:</span>Klingt schön! Und danach? <span class="vn-word">Nghe hay đấy! Rồi sau đó?</span></div>
+      <div class="dialog-line"><span class="speaker">Tom:</span>Danach <span class="blank"></span> ich müde im Hotel <span class="blank"></span>. <span class="vn-word">Sau đó mình mệt nên ở lại khách sạn.</span></div>
+    </div>
+  </div>
+
+  <div class="ubung-header">✍️ D2 — Antworten formulieren</div>
+  <div class="ubung-body">
+    <div class="instr-de">Beantworte die Fragen mit vollständigen Sätzen.</div>
+    <div class="instr-vn">Trả lời các câu hỏi bằng câu hoàn chỉnh.</div>
+    <div class="schreib-line"><span class="num">1.</span> Was hast du gestern gemacht? </div>
+    <div class="schreib-line"><span class="num">2.</span> Bist du dieses Jahr schon gereist? Wohin? </div>
+    <div class="schreib-line"><span class="num">3.</span> Wie ist das Wetter heute bei dir? </div>
+    <div class="schreib-line"><span class="num">4.</span> Was tut dir manchmal weh? </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 16–21</span>
+    <span>Seite 7 / 8</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 8 / 8 — TEIL E & ANTWORTEN ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 16–21 / Ôn tập: Bài 16–21</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL E — ÜBERSETZUNG</div>
+  <div class="teil-sub">Dịch câu (Việt → Đức)</div>
+
+  <div class="ubung-header">🌐 E1 — Übersetze ins Deutsche</div>
+  <div class="ubung-body">
+    <div class="schreib-line"><span class="num">1.</span> Hãy đi thẳng! (thân mật) </div>
+    <div class="schreib-line"><span class="num">2.</span> Hôm nay trời mưa. </div>
+    <div class="schreib-line"><span class="num">3.</span> Đầu tôi đau. </div>
+    <div class="schreib-line"><span class="num">4.</span> Tôi đã nấu ăn hôm qua. </div>
+    <div class="schreib-line"><span class="num">5.</span> Bạn đã bay đến Ý phải không? </div>
+    <div class="schreib-line"><span class="num">6.</span> Chúng tôi đã dậy sớm. </div>
+  </div>
+
+  <div class="antworten">
+    <h4>✅ ANTWORTEN / Đáp án</h4>
+    <p><strong>A1 (Zuordnen):</strong> 1. e &nbsp; 2. c &nbsp; 3. h &nbsp; 4. a &nbsp; 5. d &nbsp; 6. g &nbsp; 7. f &nbsp; 8. b</p>
+    <p><strong>A2 (Übersetzen):</strong> 1. nhà thờ &nbsp; 2. nhiều mây &nbsp; 3. ho &nbsp; 4. sốt &nbsp; 5. Bauchschmerzen &nbsp; 6. sonnig &nbsp; 7. geradeaus &nbsp; 8. das Museum</p>
+    <p><strong>A3 (Synonyme):</strong> 1. d &nbsp; 2. c &nbsp; 3. e &nbsp; 4. a &nbsp; 5. b</p>
+    <p><strong>A4 (Kategorien):</strong> Gebäude: das Museum, die Kirche, der Bahnhof &nbsp;·&nbsp; Wetter: stürmisch, neblig, windig &nbsp;·&nbsp; Krankheiten &amp; Körper: der Husten, das Fieber, der Schnupfen &nbsp;·&nbsp; Zeitausdrücke: gestern, letzte Woche, vorgestern</p>
+    <p><strong>B1 (Imperativ-Mix):</strong> 1. Geh &nbsp; 2. Nehmen Sie &nbsp; 3. Trink &nbsp; 4. Bleibt &nbsp; 5. Essen Sie &nbsp; 6. Ruf ... an &nbsp; 7. Fahrt &nbsp; 8. Folgen Sie</p>
+    <p><strong>B2 (Präpositionen):</strong> 1. gegenüber (von) &nbsp; 2. an ... vorbei &nbsp; 3. zwischen &nbsp; 4. bis &nbsp; 5. zwischen &nbsp; 6. gegenüber (von)</p>
+    <p><strong>B3 (es &amp; Wetterverben):</strong> 1. Es &nbsp; 2. schneit &nbsp; 3. gibt &nbsp; 4. donnert &nbsp; 5. Es &nbsp; 6. ist</p>
+    <p><strong>B4 (mein/tut weh):</strong> 1. Mein &nbsp; 2. tun &nbsp; 3. Meine &nbsp; 4. schmerzen &nbsp; 5. tun &nbsp; 6. Mein</p>
+    <p><strong>B5 (Perfekt mit haben):</strong> 1. habe / gekocht &nbsp; 2. hast / geputzt &nbsp; 3. hat / telefoniert &nbsp; 4. haben / gelacht &nbsp; 5. habt / gehört &nbsp; 6. haben / gekauft</p>
+    <p><strong>B6 (sein oder haben):</strong> 1. bin / gefahren &nbsp; 2. haben / gearbeitet &nbsp; 3. bist / geflogen &nbsp; 4. hat / telefoniert &nbsp; 5. seid / gewandert &nbsp; 6. bin / geblieben</p>
+    <p><strong>B7 (unregelmäßig/trennbar):</strong> 1. gegessen &nbsp; 2. geschrieben &nbsp; 3. aufgestanden &nbsp; 4. eingekauft &nbsp; 5. gesehen &nbsp; 6. ferngesehen</p>
+    <p><strong>C1 (Wortsalat):</strong> 1. Geh nach links! &nbsp; 2. Ich habe gestern gekocht. &nbsp; 3. Mein Kopf tut weh. &nbsp; 4. Bist du nach Rom geflogen? &nbsp; 5. Es regnet heute.</p>
+    <p><strong>C2 (Umformen):</strong> 1. Geh nach rechts! &nbsp; 2. Mein Kopf tut weh. &nbsp; 3. Ich habe gekocht. &nbsp; 4. Ich bin nach Berlin gefahren.</p>
+    <p><strong>C3 (Fehler finden):</strong> 1. Ich habe die Wohnung geputzt. &nbsp; 2. Ich habe gestern gearbeitet. &nbsp; 3. Er hat den Film gesehen. &nbsp; 4. Wir haben heute eingekauft.</p>
+    <p><strong>D1 (Dialog):</strong> Hast / gemacht, bin / gefahren, hat / geregnet / habe / fotografiert, bin / geblieben</p>
+    <p><strong>D2:</strong> Freie Antwort — der Lehrer korrigiert individuell. <span style="font-style:italic;">Câu trả lời tự do — giáo viên chữa trực tiếp.</span></p>
+    <p><strong>E1 (Übersetzung):</strong> 1. Geh geradeaus! &nbsp; 2. Es regnet heute. &nbsp; 3. Mein Kopf tut weh. &nbsp; 4. Ich habe gestern gekocht. &nbsp; 5. Bist du nach Italien geflogen? &nbsp; 6. Wir sind früh aufgestanden.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 8 / 8</span>
+  </div>
+</div>
+
+</body>
+</html>

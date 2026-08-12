@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Lektion 1 — Hausaufgaben</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 1.4; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #2563eb; padding-bottom: 6px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 18px; font-weight: 700; color: #1e3a8a; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11.5px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #dbeafe; color: #1e40af; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.section-title { font-size: 12px; font-weight: 700; letter-spacing: 0.6px; color: #1e3a8a; margin: 14px 0 6px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 3px; }
+.instr-de { font-size: 10.5px; color: #374151; font-style: italic; }
+.instr-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 6px; }
+.ubung-header { background: #1e3a8a; color: white; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px 6px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 6px 6px; padding: 8px 10px; margin-bottom: 10px; }
+.fill-line { display: flex; align-items: baseline; gap: 5px; font-size: 11px; margin-bottom: 6px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 24px; font-weight: 700; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 90px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 340px; display: inline-block; height: 14px; }
+.vn-word { color: #0f766e; font-size: 9.5px; font-style: italic; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+.wortsalat-block { margin-bottom: 10px; }
+.wortsalat { background: #f8fafc; border: 0.5px dashed #94a3b8; border-radius: 5px; padding: 4px 9px; font-size: 10.5px; color: #374151; margin-bottom: 3px; font-style: italic; }
+.wortsalat .vn-word { display: block; margin-top: 1px; }
+table.vocab { width: 100%; border-collapse: collapse; margin-bottom: 6px; table-layout: fixed; }
+table.vocab th { background: #1e3a8a; color: white; font-size: 10px; font-weight: 700; padding: 5px 7px; text-align: left; border: 0.5px solid #1e40af; }
+table.vocab td { padding: 5px 7px; border: 0.5px solid #e2e8f0; font-size: 10.5px; vertical-align: top; }
+table.vocab tr:nth-child(even) td { background: #f8fafc; }
+.hinweis { font-size: 10px; color: #374151; font-style: italic; margin-top: 4px; }
+.hinweis .vn-word { display: block; }
+.dialog-box { border: 0.5px solid #c7d2fe; border-radius: 6px; background: #eef2ff; padding: 8px 10px; margin-bottom: 8px; }
+.dialog-sub { font-size: 10.5px; font-weight: 700; color: #4338ca; margin: 2px 0 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+.dialog-line { font-size: 11px; margin-bottom: 5px; }
+.dialog-line .speaker { font-weight: 700; color: #3730a3; margin-right: 4px; }
+.schreib-line { border-bottom: 1px solid #94a3b8; min-height: 22px; margin-bottom: 12px; font-size: 11px; padding-left: 4px; }
+.schreib-line .num { color: #64748b; font-weight: 700; }
+.mc-block { margin-bottom: 10px; }
+.mc-frage { font-size: 11px; font-weight: 700; color: #1e3a8a; margin-bottom: 3px; }
+.mc-vn { font-size: 10px; color: #0f766e; font-style: italic; font-weight: 400; margin-bottom: 3px; }
+.mc-optionen { display: flex; gap: 16px; font-size: 11px; color: #1a1a1a; margin-bottom: 8px; padding-left: 4px; }
+.mc-optionen span { display: flex; align-items: center; gap: 4px; }
+.mc-kreis { display: inline-block; width: 10px; height: 10px; border: 1.3px solid #64748b; border-radius: 50%; flex-shrink: 0; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 8px 12px; margin-top: 6px; }
+.antworten h4 { font-size: 11px; font-weight: 700; color: #14532d; margin-bottom: 4px; }
+.antworten p { font-size: 10.5px; color: #166534; margin-bottom: 5px; line-height: 1.5; }
+.footer { margin-top: 10px; padding-top: 5px; border-top: 0.5px solid #e2e8f0; font-size: 9.5px; color: #94a3b8; display: flex; justify-content: space-between; }
+.titelseite { text-align: center; padding-top: 60px; }
+.titelseite .flag { font-size: 40px; margin-bottom: 12px; }
+.titelseite h1 { font-size: 28px; color: #1e3a8a; margin-bottom: 8px; }
+.titelseite h2 { font-size: 15px; color: #475569; font-weight: 500; margin-bottom: 4px; }
+.titelseite .vn { font-size: 13px; color: #0f766e; font-style: italic; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════════════════════ SEITE 1 / 4 ═════════════════════════════ -->
+<div class="page">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 1</h1>
+      <h2>Hausaufgaben: Begrüßung &amp; sich vorstellen / Bài tập về nhà: Chào hỏi &amp; tự giới thiệu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 1 · Hausaufgaben</div>
+  </div>
+
+  <div class="ubung-header">📝 ÜBUNG 1 — Das Verb „sein" / Bài tập 1: Động từ „sein"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Form von „sein" (bin / bist / ist / sind / seid).</div>
+    <div class="instr-vn">Hãy điền đúng dạng của „sein".</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> Sophie. <span class="vn-word">Tôi là Sophie.</span></div>
+        <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> sehr freundlich. <span class="vn-word">Bạn rất thân thiện.</span></div>
+        <div class="fill-line"><span class="num">3.</span> Sie (er/sie/es) <span class="blank"></span> Studentin. <span class="vn-word">Cô ấy là sinh viên.</span></div>
+        <div class="fill-line"><span class="num">4.</span> Wir <span class="blank"></span> aus Österreich. <span class="vn-word">Chúng tôi đến từ Áo.</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> sehr laut. <span class="vn-word">Các bạn rất ồn.</span></div>
+        <div class="fill-line"><span class="num">6.</span> Sie (Plural) <span class="blank"></span> Nachbarn. <span class="vn-word">Họ là hàng xóm.</span></div>
+        <div class="fill-line"><span class="num">7.</span> Ich <span class="blank"></span> nicht aus Berlin. <span class="vn-word">Tôi không đến từ Berlin.</span></div>
+        <div class="fill-line"><span class="num">8.*</span> <span class="blank"></span> ihr pünktlich? <span class="vn-word">Các bạn đúng giờ phải không?</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">📝 ÜBUNG 2 — Das Verb „heißen" / Bài tập 2: Động từ „heißen"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Form von „heißen" (heiße / heißt / heißen).</div>
+    <div class="instr-vn">Hãy điền đúng dạng của „heißen".</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> Julia. <span class="vn-word">Tôi tên là Julia.</span></div>
+        <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> Ben. <span class="vn-word">Bạn tên là Ben.</span></div>
+        <div class="fill-line"><span class="num">3.</span> Er <span class="blank"></span> Michael. <span class="vn-word">Anh ấy tên là Michael.</span></div>
+        <div class="fill-line"><span class="num">4.</span> Wir <span class="blank"></span> Lena und David. <span class="vn-word">Chúng tôi tên là Lena và David.</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> Nina und Paul. <span class="vn-word">Các bạn tên là Nina và Paul.</span></div>
+        <div class="fill-line"><span class="num">6.</span> Sie (Plural) <span class="blank"></span> Weber. <span class="vn-word">Họ họ Weber.</span></div>
+        <div class="fill-line"><span class="num">7.</span> Wie <span class="blank"></span> du? <span class="vn-word">Bạn tên là gì?</span></div>
+        <div class="fill-line"><span class="num">8.</span> Wie <span class="blank"></span> Sie? <span class="vn-word">Ông/Bà tên là gì?</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🔀 ÜBUNG 3 — Wortsalat / Bài tập 3: Sắp xếp câu</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ordne die Wörter zu einem grammatisch korrekten Satz.</div>
+    <div class="instr-vn">Hãy sắp xếp các từ thành câu đúng ngữ pháp.</div>
+    <div class="wortsalat-block">
+      <div class="wortsalat">1. bist / wer / du / ? <span class="vn-word">Bạn là ai?</span></div>
+      <div class="fill-line"><span class="blank-long"></span></div>
+    </div>
+    <div class="wortsalat-block">
+      <div class="wortsalat">2. Petra / ich / heiße <span class="vn-word">Tôi tên là Petra.</span></div>
+      <div class="fill-line"><span class="blank-long"></span></div>
+    </div>
+    <div class="wortsalat-block">
+      <div class="wortsalat">3. kommt / sie / woher / ? <span class="vn-word">Cô ấy đến từ đâu?</span></div>
+      <div class="fill-line"><span class="blank-long"></span></div>
+    </div>
+    <div class="wortsalat-block">
+      <div class="wortsalat">4. sind / wir / freundlich <span class="vn-word">Chúng tôi thân thiện.</span></div>
+      <div class="fill-line"><span class="blank-long"></span></div>
+    </div>
+    <div class="wortsalat-block">
+      <div class="wortsalat">5. heißt / wie / ihr / ? <span class="vn-word">Các bạn tên là gì?</span></div>
+      <div class="fill-line"><span class="blank-long"></span></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 1 · Hausaufgaben</span>
+    <span>Seite 1 / 4</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 2 / 4 ═════════════════════════════ -->
+<div class="page">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 1</h1>
+      <h2>Hausaufgaben: Begrüßung &amp; sich vorstellen / Bài tập về nhà: Chào hỏi &amp; tự giới thiệu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 1 · Hausaufgaben</div>
+  </div>
+
+  <div class="ubung-header">📚 ÜBUNG 4 — Wortschatz: Zuordnung / Bài tập 4: Nối từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schreibe den passenden Buchstaben in die mittlere Spalte.</div>
+    <div class="instr-vn">Hãy viết chữ cái phù hợp vào cột giữa.</div>
+    <table class="vocab">
+      <colgroup><col style="width:34%"><col style="width:14%"><col style="width:52%"></colgroup>
+      <thead><tr><th>Deutsch</th><th style="text-align:center;">Antwort</th><th>Vietnamesisch</th></tr></thead>
+      <tbody>
+        <tr><td>1. Guten Tag</td><td style="text-align:center;"><span class="blank" style="min-width:36px;"></span></td><td rowspan="6" style="vertical-align:top; border-left:0.5px solid #e2e8f0; font-size:10.5px;">
+          a) từ đâu?<br>
+          b) đến từ<br>
+          c) tên (tên gọi)<br>
+          d) tạm biệt (thân mật)<br>
+          e) lời chào<br>
+          f) xin chào (trang trọng)
+        </td></tr>
+        <tr><td>2. Tschüss</td><td style="text-align:center;"><span class="blank" style="min-width:36px;"></span></td></tr>
+        <tr><td>3. der Vorname</td><td style="text-align:center;"><span class="blank" style="min-width:36px;"></span></td></tr>
+        <tr><td>4. woher?</td><td style="text-align:center;"><span class="blank" style="min-width:36px;"></span></td></tr>
+        <tr><td>5. die Begrüßung</td><td style="text-align:center;"><span class="blank" style="min-width:36px;"></span></td></tr>
+        <tr><td>6. kommen (aus)</td><td style="text-align:center;"><span class="blank" style="min-width:36px;"></span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ubung-header">💬 ÜBUNG 5 — Dialog ergänzen / Bài tập 5: Điền vào đoạn hội thoại</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze den Dialog mit der richtigen Form von „sein", „heißen" oder „kommen".</div>
+    <div class="instr-vn">Hãy điền vào đoạn hội thoại với dạng đúng của „sein", „heißen" hoặc „kommen".</div>
+
+    <div class="dialog-box">
+      <div class="dialog-sub">Informell / Thân mật</div>
+      <div class="dialog-line"><span class="speaker">Peter:</span>Hallo! Wie <span class="blank"></span> du? <span class="vn-word">Xin chào! Bạn tên là gì?</span></div>
+      <div class="dialog-line"><span class="speaker">Nina:</span>Hallo! Ich <span class="blank"></span> Nina. Und du? <span class="vn-word">Xin chào! Tôi tên là Nina. Còn bạn?</span></div>
+      <div class="dialog-line"><span class="speaker">Peter:</span>Ich <span class="blank"></span> Peter. Woher <span class="blank"></span> du? <span class="vn-word">Tôi là Peter. Bạn đến từ đâu?</span></div>
+      <div class="dialog-line"><span class="speaker">Nina:</span>Ich <span class="blank"></span> aus München. <span class="vn-word">Tôi đến từ München.</span></div>
+      <div class="dialog-line"><span class="speaker">Peter:</span><span class="blank"></span> deine Freunde auch aus München? <span class="vn-word">Bạn của bạn cũng đến từ München à?</span></div>
+      <div class="dialog-line"><span class="speaker">Nina:</span>Nein, sie <span class="blank"></span> aus Köln. <span class="vn-word">Không, họ đến từ Köln.</span></div>
+    </div>
+
+    <div class="dialog-box">
+      <div class="dialog-sub">Formell / Trang trọng</div>
+      <div class="dialog-line"><span class="speaker">Herr Kaya:</span>Guten Tag! Wie <span class="blank"></span> Sie, bitte? <span class="vn-word">Xin chào! Xin ông/bà tên là gì?</span></div>
+      <div class="dialog-line"><span class="speaker">Frau Lopez:</span>Guten Tag! Ich <span class="blank"></span> Lopez. <span class="vn-word">Xin chào! Tôi tên là Lopez.</span></div>
+      <div class="dialog-line"><span class="speaker">Herr Kaya:</span><span class="blank"></span> Sie die neue Kollegin? <span class="vn-word">Bà là đồng nghiệp mới phải không?</span></div>
+      <div class="dialog-line"><span class="speaker">Frau Lopez:</span>Ja, ich <span class="blank"></span> die neue Kollegin. Freut mich! <span class="vn-word">Vâng, tôi là đồng nghiệp mới. Rất vui!</span></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 1 · Hausaufgaben</span>
+    <span>Seite 2 / 4</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 3 / 4 ═════════════════════════════ -->
+<div class="page">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 1</h1>
+      <h2>Hausaufgaben: Begrüßung &amp; sich vorstellen / Bài tập về nhà: Chào hỏi &amp; tự giới thiệu</h2>
+    </div>
+    <div class="badge">A1 · Lektion 1 · Hausaufgaben</div>
+  </div>
+
+  <div class="ubung-header">✏️ ÜBUNG 6 — Freies Schreiben / Bài tập 6: Viết tự do</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schreibe 4 vollständige Sätze über dich selbst. Benutze mindestens „sein", „heißen" und „kommen aus".</div>
+    <div class="instr-vn">Viết 4 câu hoàn chỉnh về bản thân bạn. Dùng ít nhất „sein", „heißen" và „kommen aus".</div>
+    <div class="schreib-line"><span class="num">1.</span></div>
+    <div class="schreib-line"><span class="num">2.</span></div>
+    <div class="schreib-line"><span class="num">3.</span></div>
+    <div class="schreib-line"><span class="num">4.</span></div>
+  </div>
+
+  <div class="ubung-header">🤝 ÜBUNG 7 — „du" oder „Sie"? / Bài tập 7: „du" hay „Sie"?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Lies die Situation. Ist „du" oder „Sie" richtig? Kreuze an.</div>
+    <div class="instr-vn">Đọc tình huống. „du" hay „Sie" là đúng? Hãy đánh dấu.</div>
+
+    <div class="mc-block">
+      <div class="mc-frage">1. Du triffst den Chef deiner Firma zum ersten Mal.</div>
+      <div class="mc-vn">Bạn gặp sếp của công ty lần đầu tiên.</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span> du</span><span><span class="mc-kreis"></span> Sie</span></div>
+    </div>
+    <div class="mc-block">
+      <div class="mc-frage">2. Du sprichst mit deinem kleinen Bruder.</div>
+      <div class="mc-vn">Bạn nói chuyện với em trai của mình.</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span> du</span><span><span class="mc-kreis"></span> Sie</span></div>
+    </div>
+    <div class="mc-block">
+      <div class="mc-frage">3. Du fragst eine Polizistin nach dem Weg.</div>
+      <div class="mc-vn">Bạn hỏi đường một nữ cảnh sát.</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span> du</span><span><span class="mc-kreis"></span> Sie</span></div>
+    </div>
+    <div class="mc-block">
+      <div class="mc-frage">4. Du schreibst deinem besten Freund eine Nachricht.</div>
+      <div class="mc-vn">Bạn nhắn tin cho người bạn thân nhất.</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span> du</span><span><span class="mc-kreis"></span> Sie</span></div>
+    </div>
+    <div class="mc-block">
+      <div class="mc-frage">5. Du begrüßt die Großmutter deines Freundes.</div>
+      <div class="mc-vn">Bạn chào bà của bạn mình.</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span> du</span><span><span class="mc-kreis"></span> Sie</span></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 1 · Hausaufgaben</span>
+    <span>Seite 3 / 4</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 4 / 4 ═════════════════════════════ -->
+<div class="page">
+
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Lektion 1</h1>
+      <h2>Hausaufgaben &amp; Antworten / Bài tập về nhà &amp; Đáp án</h2>
+    </div>
+    <div class="badge">A1 · Lektion 1 · Hausaufgaben</div>
+  </div>
+
+  <div class="antworten">
+    <h4>✅ ANTWORTEN / Đáp án</h4>
+    <p><strong>Übung 1 (sein):</strong> 1. bin &nbsp; 2. bist &nbsp; 3. ist &nbsp; 4. sind &nbsp; 5. seid &nbsp; 6. sind &nbsp; 7. bin &nbsp; 8. Seid</p>
+    <p><strong>Übung 2 (heißen):</strong> 1. heiße &nbsp; 2. heißt &nbsp; 3. heißt &nbsp; 4. heißen &nbsp; 5. heißt &nbsp; 6. heißen &nbsp; 7. heißt &nbsp; 8. heißen</p>
+    <p><strong>Übung 3 (Wortsalat):</strong> 1. Wer bist du? &nbsp; 2. Ich heiße Petra. &nbsp; 3. Woher kommt sie? &nbsp; 4. Wir sind freundlich. &nbsp; 5. Wie heißt ihr?</p>
+    <p><strong>Übung 4 (Wortschatz):</strong> 1. f &nbsp; 2. d &nbsp; 3. c &nbsp; 4. a &nbsp; 5. e &nbsp; 6. b</p>
+    <p><strong>Übung 5 (Dialog):</strong> Informell: heißt / heiße / bin, kommst / bin / Kommen / kommen &nbsp;·&nbsp; Formell: heißen / heiße / Sind / bin</p>
+    <p><strong>Übung 6:</strong> Freie Antwort — der Lehrer korrigiert individuell. <span style="font-style:italic;">Câu trả lời tự do — giáo viên chữa trực tiếp.</span></p>
+    <p><strong>Übung 7 (du/Sie):</strong> 1. Sie &nbsp; 2. du &nbsp; 3. Sie &nbsp; 4. du &nbsp; 5. Sie</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Lektion 1 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 4 / 4</span>
+  </div>
+</div>
+
+</body>
+</html>

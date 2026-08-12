@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Mini-Review — Lektion 22–24</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 1.4; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #dc2626; padding-bottom: 6px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 18px; font-weight: 700; color: #7f1d1d; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11.5px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #fee2e2; color: #b91c1c; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.teil-title { font-size: 14px; font-weight: 800; letter-spacing: 0.4px; color: #7f1d1d; margin: 2px 0 2px 0; }
+.teil-sub { font-size: 10.5px; color: #6b7280; margin-bottom: 10px; }
+.instr-de { font-size: 10.5px; color: #374151; font-style: italic; }
+.instr-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 6px; }
+.ubung-header { background: #7f1d1d; color: white; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px 6px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 6px 6px; padding: 8px 10px; margin-bottom: 10px; }
+.fill-line { display: flex; align-items: baseline; gap: 5px; font-size: 11px; margin-bottom: 6px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 24px; font-weight: 700; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 70px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 320px; display: inline-block; height: 14px; }
+.vn-word { color: #0f766e; font-size: 9.5px; font-style: italic; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+.wortsalat-block { margin-bottom: 8px; }
+.wortsalat { background: #fef2f2; border: 0.5px dashed #94a3b8; border-radius: 5px; padding: 4px 9px; font-size: 10.5px; color: #374151; margin-bottom: 3px; font-style: italic; }
+.wortsalat .vn-word { display: block; margin-top: 1px; }
+table.vocab { width: 100%; border-collapse: collapse; margin-bottom: 4px; table-layout: fixed; }
+table.vocab th { background: #7f1d1d; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #b91c1c; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10px; vertical-align: top; line-height: 1.25; }
+table.vocab tr:nth-child(even) td { background: #fef2f2; }
+table.vocab.compact td, table.vocab.compact th { padding: 2px 6px; }
+.dialog-box { border: 0.5px solid #fecaca; border-radius: 6px; background: #fef2f2; padding: 8px 10px; margin-bottom: 8px; }
+.dialog-sub { font-size: 10.5px; font-weight: 700; color: #b91c1c; margin: 2px 0 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+.dialog-line { font-size: 11px; margin-bottom: 5px; }
+.schreib-line { border-bottom: 1px solid #94a3b8; min-height: 20px; margin-bottom: 10px; font-size: 11px; padding-left: 4px; }
+.schreib-line .num { color: #64748b; font-weight: 700; }
+.kat-box { border: 0.5px solid #cbd5e1; border-radius: 6px; padding: 8px 10px; min-height: 40px; margin-bottom: 4px; }
+.kat-label { font-size: 10.5px; font-weight: 700; color: #7f1d1d; margin-bottom: 4px; }
+.wortbank { background: #fef2f2; border: 0.5px dashed #b91c1c; border-radius: 6px; padding: 8px 10px; font-size: 11px; color: #374151; margin-bottom: 10px; line-height: 1.7; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 8px 12px; margin-top: 6px; }
+.antworten h4 { font-size: 11px; font-weight: 700; color: #14532d; margin-bottom: 4px; }
+.antworten p { font-size: 10.5px; color: #166534; margin-bottom: 5px; line-height: 1.5; }
+.footer { margin-top: 10px; padding-top: 5px; border-top: 0.5px solid #e2e8f0; font-size: 9.5px; color: #94a3b8; display: flex; justify-content: space-between; }
+.titelseite { text-align: center; padding-top: 55px; }
+.titelseite .flag { font-size: 40px; margin-bottom: 12px; }
+.titelseite h1 { font-size: 28px; color: #7f1d1d; margin-bottom: 8px; }
+.titelseite h2 { font-size: 15px; color: #475569; font-weight: 500; margin-bottom: 4px; }
+.titelseite .vn { font-size: 13px; color: #0f766e; font-style: italic; margin-bottom: 26px; }
+.plan-table { width: 78%; margin: 0 auto; border-collapse: collapse; }
+.plan-table th { background: #7f1d1d; color: white; font-size: 11px; padding: 7px 10px; text-align: left; }
+.plan-table td { padding: 7px 10px; font-size: 11px; border-bottom: 0.5px solid #e2e8f0; text-align: left; }
+.plan-table tr:nth-child(even) td { background: #fef2f2; }
+.lekt-tags { margin-top: 30px; font-size: 10.5px; color: #64748b; }
+.lekt-tag { display: inline-block; background: #fee2e2; color: #7f1d1d; padding: 3px 10px; border-radius: 20px; margin: 3px 4px; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════════════════════ SEITE 1 / 5 — TITEL ═════════════════════════════ -->
+<div class="page">
+  <div class="titelseite">
+    <div class="flag">🇩🇪</div>
+    <h1>Deutsch A1 — Mini-Review</h1>
+    <h2>Wiederholung: Lektion 22–24</h2>
+    <div class="vn">Ôn tập tổng hợp: Bài 22–24</div>
+
+    <table class="plan-table">
+      <tr><th>Teil</th><th>Inhalt</th></tr>
+      <tr><td><strong>A</strong> — Wortschatz</td><td>Zuordnen · Übersetzen · Synonyme · Kategorien</td></tr>
+      <tr><td><strong>B</strong> — Grammatik</td><td>gemischte Übungen aus allen 3 Lektionen</td></tr>
+      <tr><td><strong>C+D</strong> — Satzbau &amp; Dialog</td><td>Sätze bilden · Fehler finden · Lücken-Mail</td></tr>
+      <tr><td><strong>E</strong> — Übersetzung</td><td>Vietnamesisch → Deutsch</td></tr>
+    </table>
+
+    <div class="lekt-tags">
+      <div>Diese Wiederholung kombiniert Inhalte aus:</div>
+      <span class="lekt-tag">L22 · Komparativ / Superlativ / dass</span>
+      <span class="lekt-tag">L23 · und / aber / weil / denn</span>
+      <span class="lekt-tag">L24 · Gesamtwiederholung</span>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 22–24</span>
+    <span>Seite 1 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 2 / 5 — TEIL A ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 22–24 / Ôn tập: Bài 22–24</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL A — WORTSCHATZ</div>
+  <div class="teil-sub">Từ vựng tổng hợp từ Bài 22–24</div>
+
+  <div class="ubung-header">🔗 A1 — Zuordnen / Nối từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schreibe den passenden Buchstaben in die mittlere Spalte.</div>
+    <div class="instr-vn">Hãy viết chữ cái phù hợp vào cột giữa.</div>
+    <table class="vocab compact">
+      <tr><th style="width:34%;">Deutsch</th><th style="width:10%;">Antwort</th><th style="width:56%;">Vietnamesisch</th></tr>
+      <tr><td>1. der Vergleich</td><td></td><td rowspan="6" style="vertical-align:top; border-left:0.5px solid #e2e8f0; padding-top:3px; line-height:1.5;">
+        a) sinh hoạt hằng ngày &nbsp;·&nbsp; b) thư từ &nbsp;·&nbsp; c) ấm cúng &nbsp;·&nbsp; d) so sánh &nbsp;·&nbsp; e) nghề nghiệp &nbsp;·&nbsp; f) lời chào đầu thư
+      </td></tr>
+      <tr><td>2. die Korrespondenz</td><td></td></tr>
+      <tr><td>3. gemütlich</td><td></td></tr>
+      <tr><td>4. der Beruf</td><td></td></tr>
+      <tr><td>5. die Anrede</td><td></td></tr>
+      <tr><td>6. der Tagesablauf</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="ubung-header">🌐 A2 — Übersetzen / Dịch từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Übersetze die Wörter in die jeweils andere Sprache.</div>
+    <div class="instr-vn">Hãy dịch các từ sang ngôn ngữ còn lại.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> teuer → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">2.</span> weil → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">3.</span> gemütlich → <span class="blank"></span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> lâu hơn → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">5.</span> rẻ nhất → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">6.</span> nhưng → <span class="blank"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🔄 A3 — Synonyme: weil ↔ denn</div>
+  <div class="ubung-body">
+    <div class="instr-de">Verbinde jeden weil-Satz mit dem bedeutungsgleichen denn-Satz.</div>
+    <div class="instr-vn">Hãy nối mỗi câu „weil" với câu „denn" có nghĩa tương đương.</div>
+    <table class="vocab compact">
+      <tr><th style="width:44%;">weil-Satz</th><th style="width:10%;">Antwort</th><th style="width:46%;">denn-Satz</th></tr>
+      <tr><td>1. Ich komme nicht, weil ich krank bin.</td><td></td><td rowspan="4" style="vertical-align:top; border-left:0.5px solid #e2e8f0; padding-top:3px; line-height:1.5;">
+        a) Sie schreibt zurück, denn sie hat Zeit. &nbsp;·&nbsp; b) Er ruft an, denn er hat Neuigkeiten. &nbsp;·&nbsp; c) Ich komme nicht, denn ich bin krank. &nbsp;·&nbsp; d) Wir feiern, denn wir haben etwas zu feiern.
+      </td></tr>
+      <tr><td>2. Sie schreibt zurück, weil sie Zeit hat.</td><td></td></tr>
+      <tr><td>3. Wir feiern, weil wir etwas zu feiern haben.</td><td></td></tr>
+      <tr><td>4. Er ruft an, weil er Neuigkeiten hat.</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="ubung-header">🗂️ A4 — Kategorien / Phân loại từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Sortiere die Wörter aus der Wortbank in die richtige Kategorie.</div>
+    <div class="instr-vn">Hãy sắp xếp các từ trong ngân hàng từ vựng vào đúng nhóm.</div>
+    <div class="wortbank">
+      schneller &nbsp;·&nbsp; weil &nbsp;·&nbsp; teurer &nbsp;·&nbsp; denn &nbsp;·&nbsp; aber &nbsp;·&nbsp; am liebsten &nbsp;·&nbsp; und &nbsp;·&nbsp; die schönste
+    </div>
+    <div class="two-col">
+      <div>
+        <div class="kat-box"><div class="kat-label">Komparativ / Superlativ <span class="vn-word">(so sánh)</span></div></div>
+      </div>
+      <div>
+        <div class="kat-box"><div class="kat-label">Konjunktionen <span class="vn-word">(liên từ)</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 22–24</span>
+    <span>Seite 2 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 3 / 5 — TEIL B ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 22–24 / Ôn tập: Bài 22–24</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL B — GRAMMATIK</div>
+  <div class="teil-sub">Gemischte Übungen aus allen 3 Lektionen — bewusst <u>nicht</u> nach Lektionen sortiert! / Bài tập ngữ pháp tổng hợp — <u>không</u> sắp xếp theo bài học!</div>
+
+  <div class="ubung-header">⚖️ B1 — Komparativ &amp; Superlativ gemischt</div>
+  <div class="ubung-body">
+    <div class="instr-de">Bilde die richtige Steigerungsform.</div>
+    <div class="instr-vn">Chia đúng thể so sánh.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Der Zug ist <span class="blank"></span> als das Auto. <span class="vn-word">(schnell)</span></div>
+        <div class="fill-line"><span class="num">2.</span> Das ist die <span class="blank"></span> Stadt Deutschlands. <span class="vn-word">(groß)</span></div>
+        <div class="fill-line"><span class="num">3.</span> Ich trinke am <span class="blank"></span> Kaffee. <span class="vn-word">(gern)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Mein Bruder ist <span class="blank"></span> als ich. <span class="vn-word">(jung)</span></div>
+        <div class="fill-line"><span class="num">5.</span> Das war der <span class="blank"></span> Film des Jahres. <span class="vn-word">(gut)</span></div>
+        <div class="fill-line"><span class="num">6.</span> Im Sommer ist es am <span class="blank"></span>. <span class="vn-word">(warm)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🔗 B2 — Konjunktionen-Mix: und, aber, weil, denn, dass</div>
+  <div class="ubung-body">
+    <div class="instr-de">Wähle die passende Konjunktion — achte auf die Wortstellung im Satz!</div>
+    <div class="instr-vn">Chọn liên từ phù hợp — chú ý trật tự từ trong câu!</div>
+    <div class="fill-line"><span class="num">1.</span> Ich lerne Deutsch, <span class="blank"></span> ich in Deutschland arbeiten möchte.</div>
+    <div class="fill-line"><span class="num">2.</span> Ich glaube, <span class="blank"></span> der Kurs interessant ist.</div>
+    <div class="fill-line"><span class="num">3.</span> Ich komme später, <span class="blank"></span> ich muss noch arbeiten.</div>
+    <div class="fill-line"><span class="num">4.</span> Der Brief ist fertig, <span class="blank"></span> die Anrede fehlt noch.</div>
+    <div class="fill-line"><span class="num">5.</span> Ich schreibe dir, <span class="blank"></span> ich lade dich ein.</div>
+    <div class="fill-line"><span class="num">6.</span> Ich finde, <span class="blank"></span> das Café gemütlich ist.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 22–24</span>
+    <span>Seite 3 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 4 / 5 — TEIL C + D ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 22–24 / Ôn tập: Bài 22–24</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL C — SATZBAU</div>
+  <div class="teil-sub">Cấu trúc câu</div>
+
+  <div class="ubung-header">🔀 C1 — Sätze bilden (Wortsalat)</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ordne die Wörter zu einem grammatisch korrekten Satz.</div>
+    <div class="instr-vn">Hãy sắp xếp các từ thành câu đúng ngữ pháp.</div>
+    <div class="wortsalat-block"><div class="wortsalat">1. schneller / ist / der Bus / als das Fahrrad<span class="vn-word">Xe buýt nhanh hơn xe đạp.</span></div></div>
+    <div class="wortsalat-block"><div class="wortsalat">2. finde / ich / dass / gemütlich / das Café / ist<span class="vn-word">Tôi thấy quán cà phê này ấm cúng.</span></div></div>
+    <div class="wortsalat-block"><div class="wortsalat">3. krank / weil / bin / ich / komme ich nicht<span class="vn-word">Tôi không đến vì tôi bị bệnh.</span></div></div>
+  </div>
+
+  <div class="ubung-header">🔍 C2 — Fehler finden</div>
+  <div class="ubung-body">
+    <div class="instr-de">Jeder Satz hat einen Fehler. Finde ihn und schreibe den Satz richtig.</div>
+    <div class="instr-vn">Mỗi câu có một lỗi sai. Hãy tìm và viết lại câu cho đúng.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich glaube, der Kurs ist schwerer wird. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Ich komme nicht, weil ich bin krank. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Berlin ist groß als Hamburg. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+  </div>
+
+  <div class="teil-title" style="margin-top:14px;">TEIL D — DIALOG</div>
+  <div class="teil-sub">Hội thoại</div>
+
+  <div class="ubung-header">💬 D1 — E-Mail ergänzen</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die E-Mail mit „denn", „weil", „dass" oder der richtigen Komparativform.</div>
+    <div class="instr-vn">Điền vào email với „denn", „weil", „dass" hoặc dạng so sánh đúng.</div>
+    <div class="dialog-box">
+      <div class="dialog-sub">Einladung zum Fest / Lời mời dự tiệc</div>
+      <div class="dialog-line">Lieber Ben, ich schreibe dir, <span class="blank"></span> ich habe eine Frage. <span class="vn-word">Chào Ben, mình viết cho bạn vì mình có một câu hỏi.</span></div>
+      <div class="dialog-line">Das Fest ist <span class="blank"></span> als letztes Jahr, <span class="blank"></span> wir mehr Gäste eingeladen haben. <span class="vn-word">Bữa tiệc năm nay đẹp hơn năm ngoái, vì chúng tôi mời nhiều khách hơn.</span></div>
+      <div class="dialog-line">Ich freue mich, <span class="blank"></span> du kommst! <span class="vn-word">Mình rất vui vì bạn sẽ đến!</span></div>
+      <div class="dialog-line">Viele Grüße, Lea</div>
+    </div>
+  </div>
+
+  <div class="ubung-header">✍️ D2 — Antworten formulieren</div>
+  <div class="ubung-body">
+    <div class="schreib-line"><span class="num">1.</span> Vergleiche zwei Städte oder Länder in einem Satz. </div>
+    <div class="schreib-line"><span class="num">2.</span> Warum lernst du Deutsch? (mit weil oder denn) </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 22–24</span>
+    <span>Seite 4 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 5 / 5 — TEIL E & ANTWORTEN ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 22–24 / Ôn tập: Bài 22–24</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL E — ÜBERSETZUNG</div>
+  <div class="teil-sub">Dịch câu (Việt → Đức)</div>
+
+  <div class="ubung-header">🌐 E1 — Übersetze ins Deutsche</div>
+  <div class="ubung-body">
+    <div class="schreib-line"><span class="num">1.</span> Berlin lớn hơn Hamburg. </div>
+    <div class="schreib-line"><span class="num">2.</span> Tôi tin rằng khóa học thú vị. </div>
+    <div class="schreib-line"><span class="num">3.</span> Tôi không thể đến vì tôi phải làm việc. </div>
+    <div class="schreib-line"><span class="num">4.</span> Bức thư đã xong, nhưng lời chào còn thiếu. </div>
+  </div>
+
+  <div class="antworten">
+    <h4>✅ ANTWORTEN / Đáp án</h4>
+    <p><strong>A1 (Zuordnen):</strong> 1. d &nbsp; 2. b &nbsp; 3. c &nbsp; 4. e &nbsp; 5. f &nbsp; 6. a</p>
+    <p><strong>A2 (Übersetzen):</strong> 1. đắt &nbsp; 2. vì &nbsp; 3. ấm cúng &nbsp; 4. länger &nbsp; 5. billigste (am billigsten) &nbsp; 6. aber</p>
+    <p><strong>A3 (Synonyme):</strong> 1. c &nbsp; 2. a &nbsp; 3. d &nbsp; 4. b</p>
+    <p><strong>A4 (Kategorien):</strong> Komparativ/Superlativ: schneller, teurer, am liebsten, die schönste &nbsp;·&nbsp; Konjunktionen: weil, denn, aber, und</p>
+    <p><strong>B1 (Komparativ/Superlativ):</strong> 1. schneller &nbsp; 2. größte &nbsp; 3. liebsten &nbsp; 4. jünger &nbsp; 5. beste &nbsp; 6. wärmsten</p>
+    <p><strong>B2 (Konjunktionen-Mix):</strong> 1. weil &nbsp; 2. dass &nbsp; 3. denn &nbsp; 4. aber &nbsp; 5. und &nbsp; 6. dass</p>
+    <p><strong>C1 (Wortsalat):</strong> 1. Der Bus ist schneller als das Fahrrad. &nbsp; 2. Ich finde, dass das Café gemütlich ist. &nbsp; 3. Ich komme nicht, weil ich krank bin.</p>
+    <p><strong>C2 (Fehler finden):</strong> 1. Ich glaube, dass der Kurs schwerer wird. &nbsp; 2. Ich komme nicht, weil ich krank bin. &nbsp; 3. Berlin ist größer als Hamburg.</p>
+    <p><strong>D1 (E-Mail):</strong> denn / schöner / weil / dass</p>
+    <p><strong>D2:</strong> Freie Antwort — der Lehrer korrigiert individuell. <span style="font-style:italic;">Câu trả lời tự do — giáo viên chữa trực tiếp.</span></p>
+    <p><strong>E1 (Übersetzung):</strong> 1. Berlin ist größer als Hamburg. &nbsp; 2. Ich glaube, dass der Kurs interessant ist. &nbsp; 3. Ich kann nicht kommen, weil ich arbeiten muss. &nbsp; 4. Der Brief ist fertig, aber die Anrede fehlt noch.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 5 / 5</span>
+  </div>
+</div>
+
+</body>
+</html>

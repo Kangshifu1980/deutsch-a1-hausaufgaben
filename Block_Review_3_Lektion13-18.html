@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Block-Review 3 — Lektion 13–18</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 1.4; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #d97706; padding-bottom: 6px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 18px; font-weight: 700; color: #78350f; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11.5px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #fef3c7; color: #92400e; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.teil-title { font-size: 14px; font-weight: 800; letter-spacing: 0.4px; color: #78350f; margin: 2px 0 2px 0; }
+.teil-sub { font-size: 10.5px; color: #6b7280; margin-bottom: 10px; }
+.instr-de { font-size: 10.5px; color: #374151; font-style: italic; }
+.instr-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 6px; }
+.ubung-header { background: #78350f; color: white; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px 6px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 6px 6px; padding: 8px 10px; margin-bottom: 10px; }
+.fill-line { display: flex; align-items: baseline; gap: 5px; font-size: 11px; margin-bottom: 6px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 24px; font-weight: 700; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 70px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 320px; display: inline-block; height: 14px; }
+.vn-word { color: #0f766e; font-size: 9.5px; font-style: italic; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+table.vocab { width: 100%; border-collapse: collapse; margin-bottom: 4px; table-layout: fixed; }
+table.vocab th { background: #78350f; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #92400e; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10px; vertical-align: top; line-height: 1.25; }
+table.vocab tr:nth-child(even) td { background: #fffbeb; }
+table.vocab.compact td, table.vocab.compact th { padding: 2px 6px; }
+.lesetext { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; font-size: 11.5px; line-height: 1.65; color: #292524; }
+.lesetext p { margin-bottom: 8px; }
+.lesetext p:last-child { margin-bottom: 0; }
+.mc-block { margin-bottom: 8px; }
+.mc-frage { font-size: 11px; font-weight: 700; color: #78350f; margin-bottom: 3px; }
+.mc-optionen { display: flex; gap: 16px; font-size: 11px; color: #1a1a1a; margin-bottom: 6px; padding-left: 4px; flex-wrap: wrap; }
+.mc-optionen span { display: flex; align-items: center; gap: 4px; }
+.mc-kreis { display: inline-block; width: 10px; height: 10px; border: 1.3px solid #64748b; border-radius: 50%; flex-shrink: 0; }
+.rf-row { display: flex; align-items: center; gap: 10px; font-size: 11px; margin-bottom: 6px; }
+.rf-row .satz { flex: 1; }
+.rf-optionen { display: flex; gap: 10px; }
+.rf-optionen span { display: flex; align-items: center; gap: 3px; font-size: 10px; color: #64748b; }
+.rf-kreis { display: inline-block; width: 10px; height: 10px; border: 1.3px solid #64748b; border-radius: 50%; }
+.dialog-box { border: 0.5px solid #fde68a; border-radius: 6px; background: #fffbeb; padding: 8px 10px; margin-bottom: 8px; }
+.dialog-sub { font-size: 10.5px; font-weight: 700; color: #92400e; margin: 2px 0 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+.schreib-line { border-bottom: 1px solid #94a3b8; min-height: 20px; margin-bottom: 10px; font-size: 11px; padding-left: 4px; }
+.schreib-line .num { color: #64748b; font-weight: 700; }
+.formular { border: 1px solid #fde68a; border-radius: 8px; background: #fffbeb; padding: 10px 14px; margin-bottom: 10px; }
+.formular-zeile { display: flex; align-items: baseline; gap: 8px; font-size: 11px; margin-bottom: 8px; }
+.formular-label { min-width: 130px; font-weight: 700; color: #78350f; }
+.formular-vn { font-size: 9px; color: #0f766e; font-style: italic; margin-left: 4px; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 8px 12px; margin-top: 6px; }
+.antworten h4 { font-size: 11px; font-weight: 700; color: #14532d; margin-bottom: 4px; }
+.antworten p { font-size: 10.5px; color: #166534; margin-bottom: 5px; line-height: 1.5; }
+.footer { margin-top: 10px; padding-top: 5px; border-top: 0.5px solid #e2e8f0; font-size: 9.5px; color: #94a3b8; display: flex; justify-content: space-between; }
+.titelseite { text-align: center; padding-top: 45px; }
+.titelseite .flag { font-size: 40px; margin-bottom: 12px; }
+.titelseite h1 { font-size: 27px; color: #78350f; margin-bottom: 8px; }
+.titelseite h2 { font-size: 15px; color: #475569; font-weight: 500; margin-bottom: 4px; }
+.titelseite .vn { font-size: 13px; color: #0f766e; font-style: italic; margin-bottom: 22px; }
+.plan-table { width: 80%; margin: 0 auto; border-collapse: collapse; }
+.plan-table th { background: #78350f; color: white; font-size: 11px; padding: 7px 10px; text-align: left; }
+.plan-table td { padding: 7px 10px; font-size: 11px; border-bottom: 0.5px solid #e2e8f0; text-align: left; }
+.plan-table tr:nth-child(even) td { background: #fffbeb; }
+.lekt-tags { margin-top: 24px; font-size: 10.5px; color: #64748b; }
+.lekt-tag { display: inline-block; background: #fef3c7; color: #78350f; padding: 3px 10px; border-radius: 20px; margin: 3px 4px; font-weight: 600; }
+.block-banner { background: linear-gradient(90deg, #fef3c7, #fde68a); border: 1px solid #f59e0b; border-radius: 8px; padding: 10px 16px; margin-top: 22px; }
+.block-banner .titel { font-size: 13px; font-weight: 800; color: #78350f; margin-bottom: 3px; }
+.block-banner .text { font-size: 10.5px; color: #92400e; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════════════════════ SEITE 1 / 5 — TITEL ═════════════════════════════ -->
+<div class="page">
+  <div class="titelseite">
+    <div class="flag">📙</div>
+    <h1>Deutsch A1 — Block-Review 3</h1>
+    <h2>Freizeit, Reisen &amp; Gesundheit — Lektion 13–18</h2>
+    <div class="vn">Kiểm tra tổng kết Khối 3: Thời gian rảnh, Du lịch &amp; Sức khỏe — Bài 13–18</div>
+
+    <table class="plan-table">
+      <tr><th>Teil</th><th>Inhalt</th></tr>
+      <tr><td><strong>A</strong> — Leseverstehen</td><td>Lesetext · Richtig/Falsch · Multiple Choice · Informationen finden</td></tr>
+      <tr><td><strong>B</strong> — Grammatik</td><td>gemischte Übungen aus Lektion 13–18, abwechslungsreiche Formate</td></tr>
+      <tr><td><strong>C</strong> — Schreiben</td><td>Ausflug beschreiben/planen · kurze Nachricht · persönliche Fragen</td></tr>
+      <tr><td><strong>D</strong> — Übersetzung &amp; Fehler</td><td>Übersetzungssätze · Fehler korrigieren</td></tr>
+    </table>
+
+    <div class="lekt-tags">
+      <div>Themen aus Lektion 13–18:</div>
+      <span class="lekt-tag">🚆 Freizeit &amp; Verkehr</span>
+      <span class="lekt-tag">🌤️ Wetter</span>
+      <span class="lekt-tag">🗺️ Wegbeschreibung &amp; Imperativ</span>
+      <span class="lekt-tag">❤️ Gesundheit</span>
+      <span class="lekt-tag">🍽️ schmecken / gefallen</span>
+    </div>
+
+    <div class="block-banner">
+      <div class="titel">🎯 Fokus dieses Block-Reviews</div>
+      <div class="text">Von Freizeit, Ausflügen und Gesundheit erzählen — komplett im Präsens. Perfekt, Komparativ und weil/denn/dass folgen erst in Block 4.</div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 3 · Lektion 13–18</span>
+    <span>Seite 1 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 2 / 5 — TEIL A ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📙 Block-Review 3</h1>
+      <h2>Lektion 13–18 / Bài 13–18</h2>
+    </div>
+    <div class="badge">Teil A — Leseverstehen</div>
+  </div>
+
+  <div class="teil-title">TEIL A — LESEVERSTEHEN</div>
+  <div class="teil-sub">Đọc hiểu</div>
+
+  <div class="ubung-header">📖 Lies den Text / Đọc đoạn văn</div>
+  <div class="lesetext">
+    <p>Am Samstag habe ich endlich frei. Das Wetter ist sehr schön: sonnig und warm, kein Wind und kein Regen. Ich will schon lange einen Ausflug machen, und meine Freundin Lisa kann auch mitkommen.</p>
+    <p>Wir fahren mit dem Zug in die Berge. Die Fahrt dauert zwei Stunden. Im Zug essen wir ein Butterbrot und trinken Kaffee. Lisa mag Berge sehr, aber sie kann nicht so gut wandern wie ich.</p>
+    <p>In den Bergen machen wir eine Wanderung von drei Stunden. Der Weg ist nicht leicht, aber die Aussicht ist wunderschön. Am Nachmittag haben wir Hunger, und wir essen in einem kleinen Restaurant. Die Suppe schmeckt uns sehr gut.</p>
+    <p>Leider bekommt Lisa am Abend Kopfschmerzen — vielleicht von der Sonne. Sie muss sich ausruhen und viel Wasser trinken. Am nächsten Tag geht es ihr wieder gut. Der Ausflug ist anstrengend, aber wir haben viel Spaß zusammen. Nächstes Wochenende wollen wir wieder etwas unternehmen.</p>
+  </div>
+
+  <div class="ubung-header">✅ A1 — Richtig oder falsch? / Đúng hay sai?</div>
+  <div class="ubung-body">
+    <div class="rf-row"><span class="num">1.</span><span class="satz">Am Samstag hat die Erzählerin keine Zeit.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">2.</span><span class="satz">Das Wetter ist schön.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">3.</span><span class="satz">Lisa kann besser wandern als die Erzählerin.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">4.</span><span class="satz">Die Wanderung dauert drei Stunden.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">5.</span><span class="satz">Lisa bekommt am Abend Kopfschmerzen.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+  </div>
+
+  <div class="ubung-header">🔘 A2 — Multiple Choice</div>
+  <div class="ubung-body">
+    <div class="mc-block">
+      <div class="mc-frage">1. Wie fahren sie in die Berge?</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span>a) mit dem Auto</span><span><span class="mc-kreis"></span>b) mit dem Zug</span><span><span class="mc-kreis"></span>c) mit dem Fahrrad</span></div>
+    </div>
+    <div class="mc-block">
+      <div class="mc-frage">2. Was essen sie am Nachmittag?</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span>a) ein Butterbrot</span><span><span class="mc-kreis"></span>b) Suppe im Restaurant</span><span><span class="mc-kreis"></span>c) Kuchen</span></div>
+    </div>
+    <div class="mc-block">
+      <div class="mc-frage">3. Was muss Lisa am Abend machen?</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span>a) tanzen</span><span><span class="mc-kreis"></span>b) sich ausruhen</span><span><span class="mc-kreis"></span>c) wandern</span></div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🔍 A3 — Informationen finden / Tìm thông tin</div>
+  <div class="ubung-body">
+    <div class="instr-de">Beantworte die Fragen mit Informationen aus dem Text.</div>
+    <div class="instr-vn">Hãy trả lời các câu hỏi bằng thông tin trong bài đọc.</div>
+    <div class="fill-line"><span class="num">1.</span> Wie lange dauert die Zugfahrt? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Wovon bekommt Lisa vielleicht Kopfschmerzen? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Was wollen sie nächstes Wochenende machen? <span class="blank-long"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 3 · Lektion 13–18</span>
+    <span>Seite 2 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 3 / 5 — TEIL B ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📙 Block-Review 3</h1>
+      <h2>Lektion 13–18 / Bài 13–18</h2>
+    </div>
+    <div class="badge">Teil B — Grammatik</div>
+  </div>
+
+  <div class="teil-title">TEIL B — GRAMMATIK</div>
+  <div class="teil-sub">Gemischte Übungen aus Lektion 13–18 — abwechslungsreiche Formate / Bài tập ngữ pháp tổng hợp — nhiều dạng khác nhau</div>
+
+  <div class="ubung-header">🚗 B1 — Freizeit &amp; Verkehr: Zuordnen</div>
+  <div class="ubung-body">
+    <table class="vocab compact">
+      <tr><th style="width:34%;">Deutsch</th><th style="width:10%;">Antwort</th><th style="width:56%;">Vietnamesisch</th></tr>
+      <tr><td>1. der Zug</td><td></td><td rowspan="4" style="vertical-align:top; border-left:0.5px solid #e2e8f0; padding-top:3px; line-height:1.5;">
+        a) đi bộ &nbsp;·&nbsp; b) tàu hỏa &nbsp;·&nbsp; c) xe đạp &nbsp;·&nbsp; d) xe buýt
+      </td></tr>
+      <tr><td>2. das Fahrrad</td><td></td></tr>
+      <tr><td>3. der Bus</td><td></td></tr>
+      <tr><td>4. zu Fuß</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="ubung-header">🧩 B2 — Modalverben-Mix</div>
+  <div class="ubung-body">
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> gut kochen. <span class="vn-word">(können)</span></div>
+        <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> ins Kino gehen. <span class="vn-word">(wollen)</span></div>
+        <div class="fill-line"><span class="num">3.</span> Hier <span class="blank"></span> man nicht rauchen. <span class="vn-word">(dürfen)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Der Arzt sagt, ich <span class="blank"></span> mehr schlafen. <span class="vn-word">(sollen)</span></div>
+        <div class="fill-line"><span class="num">5.</span> Wir <span class="blank"></span> pünktlich sein. <span class="vn-word">(müssen)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🌦️ B3 — Wetter &amp; Gesundheit: Zuordnen</div>
+  <div class="ubung-body">
+    <table class="vocab compact">
+      <tr><th style="width:34%;">Deutsch</th><th style="width:10%;">Antwort</th><th style="width:56%;">Vietnamesisch</th></tr>
+      <tr><td>1. sonnig</td><td></td><td rowspan="4" style="vertical-align:top; border-left:0.5px solid #e2e8f0; padding-top:3px; line-height:1.5;">
+        a) sốt &nbsp;·&nbsp; b) nắng &nbsp;·&nbsp; c) ho &nbsp;·&nbsp; d) có gió
+      </td></tr>
+      <tr><td>2. der Husten</td><td></td></tr>
+      <tr><td>3. windig</td><td></td></tr>
+      <tr><td>4. das Fieber</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="ubung-header">🗺️ B4 — Imperativ: Wegbeschreibung</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> <span class="blank"></span> nach links! <span class="vn-word">(gehen, du)</span></div>
+    <div class="fill-line"><span class="num">2.</span> <span class="blank"></span> die erste Straße! <span class="vn-word">(nehmen, Sie)</span></div>
+    <div class="fill-line"><span class="num">3.</span> <span class="blank"></span> der Straße! <span class="vn-word">(folgen, ihr)</span></div>
+  </div>
+
+  <div class="ubung-header">🍽️ B5 — „schmecken" &amp; „gefallen"</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> Die Suppe <span class="blank"></span> mir gut. <span class="vn-word">(schmecken)</span></div>
+    <div class="fill-line"><span class="num">2.</span> Das Restaurant <span class="blank"></span> uns sehr. <span class="vn-word">(gefallen)</span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 3 · Lektion 13–18</span>
+    <span>Seite 3 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 4 / 5 — TEIL C ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📙 Block-Review 3</h1>
+      <h2>Lektion 13–18 / Bài 13–18</h2>
+    </div>
+    <div class="badge">Teil C — Schreiben</div>
+  </div>
+
+  <div class="teil-title">TEIL C — SCHREIBEN</div>
+  <div class="teil-sub">Viết</div>
+
+  <div class="ubung-header">✏️ C1 — Beschreibe deinen perfekten Ausflug ODER plane einen Tagesausflug</div>
+  <div class="ubung-body">
+    <div class="instr-de">Wähle ein Thema und schreibe 6–8 vollständige Sätze — komplett im Präsens. (a) Beschreibe deinen perfekten Ausflug: Wohin fährst du? Womit? Was machst du dort? (b) Plane einen Tagesausflug: Wohin, wann, womit, mit wem? Du kannst auch erfundene Daten benutzen.</div>
+    <div class="instr-vn">Chọn một chủ đề và viết 6–8 câu hoàn chỉnh — hoàn toàn ở thì hiện tại. (a) Miêu tả chuyến đi hoàn hảo của bạn. (b) Lên kế hoạch cho một chuyến đi trong ngày. Bạn cũng có thể dùng thông tin tự nghĩ ra.</div>
+    <div class="schreib-line"><span class="num">1.</span></div>
+    <div class="schreib-line"><span class="num">2.</span></div>
+    <div class="schreib-line"><span class="num">3.</span></div>
+    <div class="schreib-line"><span class="num">4.</span></div>
+    <div class="schreib-line"><span class="num">5.</span></div>
+    <div class="schreib-line"><span class="num">6.</span></div>
+    <div class="schreib-line"><span class="num">7.</span></div>
+    <div class="schreib-line"><span class="num">8.</span></div>
+  </div>
+
+  <div class="ubung-header">💌 C2 — Kurze Nachricht: Du bist krank</div>
+  <div class="ubung-body">
+    <div class="instr-de">Du bist krank und kannst nicht kommen. Schreibe eine kurze Nachricht an einen Freund oder deinen Chef. Benutze Gesundheitsvokabular und ein Modalverb.</div>
+    <div class="instr-vn">Bạn bị ốm và không thể đến. Viết một tin nhắn ngắn cho bạn bè hoặc sếp của bạn. Dùng từ vựng về sức khỏe và một động từ khiếm khuyết.</div>
+    <div class="schreib-line"><span class="num">1.</span></div>
+    <div class="schreib-line"><span class="num">2.</span></div>
+    <div class="schreib-line"><span class="num">3.</span></div>
+  </div>
+
+  <div class="ubung-header">💬 C3 — Persönliche Fragen beantworten</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> Was machst du am Wochenende? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Wie kommst du normalerweise zur Arbeit oder Schule? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Wie ist das Wetter heute? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Was tut dir manchmal weh? <span class="blank-long"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 3 · Lektion 13–18</span>
+    <span>Seite 4 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 5 / 5 — TEIL D & ANTWORTEN ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📙 Block-Review 3</h1>
+      <h2>Lektion 13–18 / Bài 13–18</h2>
+    </div>
+    <div class="badge">Teil D — Übersetzung &amp; Fehler</div>
+  </div>
+
+  <div class="teil-title">TEIL D — ÜBERSETZUNG / FEHLER FINDEN</div>
+  <div class="teil-sub">Dịch câu &amp; sửa lỗi</div>
+
+  <div class="ubung-header">🌐 D1 — Übersetze ins Deutsche</div>
+  <div class="ubung-body">
+    <div class="schreib-line"><span class="num">1.</span> Tôi có thể chơi quần vợt. </div>
+    <div class="schreib-line"><span class="num">2.</span> Trời mưa hôm nay. </div>
+    <div class="schreib-line"><span class="num">3.</span> Tôi phải nghỉ ngơi. </div>
+    <div class="schreib-line"><span class="num">4.</span> Bạn có thấy món súp này ngon không? </div>
+  </div>
+
+  <div class="ubung-header">🔍 D2 — Fehler finden</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> Er kann Tennis spielt. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Die Suppe gefällt mir gut. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Geh du nach links! <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Wie ist Wetter heute? <span class="vn-word">→</span> <span class="blank-long"></span></div>
+  </div>
+
+  <div class="antworten">
+    <h4>✅ ANTWORTEN / Đáp án</h4>
+    <p><strong>A1 (Richtig/Falsch):</strong> 1. falsch &nbsp; 2. richtig &nbsp; 3. falsch &nbsp; 4. richtig &nbsp; 5. richtig</p>
+    <p><strong>A2 (Multiple Choice):</strong> 1. b &nbsp; 2. b &nbsp; 3. b</p>
+    <p><strong>A3 (Informationen finden):</strong> 1. Zwei Stunden. &nbsp; 2. Vielleicht von der Sonne. &nbsp; 3. Wieder etwas unternehmen.</p>
+    <p><strong>B1 (Freizeit/Verkehr):</strong> 1. b &nbsp; 2. c &nbsp; 3. d &nbsp; 4. a</p>
+    <p><strong>B2 (Modalverben-Mix):</strong> 1. kann &nbsp; 2. willst &nbsp; 3. darf &nbsp; 4. soll &nbsp; 5. müssen</p>
+    <p><strong>B3 (Wetter/Gesundheit):</strong> 1. b &nbsp; 2. c &nbsp; 3. d &nbsp; 4. a</p>
+    <p><strong>B4 (Imperativ):</strong> 1. Geh &nbsp; 2. Nehmen Sie &nbsp; 3. Folgt</p>
+    <p><strong>B5 (schmecken/gefallen):</strong> 1. schmeckt &nbsp; 2. gefällt</p>
+    <p><strong>C1, C2 &amp; C3:</strong> Freie Antwort — der Lehrer korrigiert individuell. <span style="font-style:italic;">Câu trả lời tự do — giáo viên chữa trực tiếp.</span></p>
+    <p><strong>D1 (Übersetzung):</strong> 1. Ich kann Tennis spielen. &nbsp; 2. Es regnet heute. &nbsp; 3. Ich muss mich ausruhen. &nbsp; 4. Schmeckt dir die Suppe?</p>
+    <p><strong>D2 (Fehler finden):</strong> 1. Er kann Tennis spielen. &nbsp; 2. Die Suppe schmeckt mir gut. &nbsp; 3. Geh nach links! &nbsp; 4. Wie ist das Wetter heute?</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 3 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 5 / 5</span>
+  </div>
+</div>
+
+</body>
+</html>

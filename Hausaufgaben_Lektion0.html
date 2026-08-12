@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<style>
+  body{font-family:Arial,sans-serif;font-size:13px;margin:0;padding:16px;color:#222;background:#fff}
+  .header{background:linear-gradient(120deg,#1e3a8a,#7c3aed);color:#fff;padding:10px 16px;border-radius:8px 8px 0 0}
+  .header h1{margin:0;font-size:17px;font-weight:700}
+  .header h2{margin:2px 0 0;font-size:12px;font-weight:400;opacity:.9}
+  .subheader{background:#eef0f5;padding:5px 16px;font-size:11px;color:#555;border-bottom:2px solid #7c3aed;margin-bottom:12px}
+  .section{margin-bottom:14px;border:1px solid #ddd;border-radius:6px;overflow:hidden}
+  .section-title{color:#fff;padding:5px 12px;font-size:12px;font-weight:700}
+  .st-blue{background:#1e40af}
+  .st-purple{background:#7c3aed}
+  .st-green{background:#166534}
+  .st-orange{background:#c2410c}
+  .st-red{background:#A32D2D}
+  .st-teal{background:#0f766e}
+  .section-hint{font-size:10px;color:#ffffffcc;font-style:italic;margin-left:6px;font-weight:400}
+  .section-body{padding:10px 12px}
+  .item{margin:4px 0;display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+  .num{font-weight:700;min-width:16px;font-size:12px}
+  .num-blue{color:#1e40af}.num-purple{color:#7c3aed}.num-green{color:#166534}.num-orange{color:#c2410c}.num-red{color:#A32D2D}.num-teal{color:#0f766e}
+  .line{flex:1;border-bottom:1px solid #bbb;min-width:80px;height:1px;margin-bottom:2px}
+  .hint{color:#888;font-size:10px;font-style:italic;white-space:nowrap}
+  table{width:100%;border-collapse:collapse;font-size:12px}
+  th{background:#e3e8fb;color:#1e3a8a;font-size:11px;padding:4px 8px;text-align:left;border:1px solid #ddd}
+  td{padding:5px 8px;border:1px solid #ddd}
+  .answer-box{background:#f7f8fc;border:1px solid #d8dcf0;border-radius:6px;padding:8px 12px;margin-bottom:14px}
+  .answer-title{color:#1e3a8a;font-weight:700;font-size:12px;margin-bottom:6px}
+  .ar{margin:2px 0;font-size:11px}
+  .ar strong{color:#3730a3}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+  .tip{background:#fffbe6;border-left:3px solid #f0a500;padding:5px 10px;font-size:11px;border-radius:0 4px 4px 0;margin-bottom:8px}
+  .choice{display:inline-block;border:1px solid #bbb;border-radius:3px;width:18px;height:18px;margin-right:4px;vertical-align:middle;text-align:center;font-size:11px;line-height:18px}
+  .sortbox{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+  .sortcol{border-radius:6px;padding:6px 8px}
+  .sortcol.left{background:#f0fdf4;border:1px dashed #86efac}
+  .sortcol.right{background:#fff1f2;border:1px dashed #fca5a5}
+  .sortcol h5{margin:0 0 4px 0;font-size:11px}
+  .sortcol .left h5{color:#166534}
+  .sortcol .right h5{color:#A32D2D}
+  .wordpool{background:#eef0f5;border-radius:6px;padding:6px 10px;font-size:11.5px;margin-bottom:8px}
+  .wordpool span{display:inline-block;background:#fff;border:1px solid #ccc;border-radius:4px;padding:2px 7px;margin:2px 3px}
+  @media print{body{padding:8px}}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🇩🇪 Deutsch A1 — Hausaufgaben L0 / Bài tập về nhà</h1>
+  <h2>Lektion 0 — Aussprache-Vertiefung / Đào sâu phát âm (Vokale, Umlaute, ch, Konsonanten)</h2>
+</div>
+<div class="subheader">Name / Tên: _________________________</div>
+
+<div class="two">
+  <!-- Ü1 Umlaut zuordnen -->
+  <div class="section">
+    <div class="section-title st-purple">✏️ Übung 1 — Welcher Umlaut fehlt? <span class="section-hint">Ordne zu. / Nối các cặp.</span></div>
+    <div class="section-body">
+      <table>
+        <tr><th>Wort</th><th>Umlaut</th></tr>
+        <tr><td><span class="num num-purple">1.</span> sch_n</td><td>A. &nbsp;<span style="font-weight:700">Ä</span></td></tr>
+        <tr><td><span class="num num-purple">2.</span> _bung</td><td>B. &nbsp;<span style="font-weight:700">Ö</span></td></tr>
+        <tr><td><span class="num num-purple">3.</span> _rzte</td><td>C. &nbsp;<span style="font-weight:700">Ü</span></td></tr>
+      </table>
+      <div style="margin-top:8px;font-size:11px;color:#555">Antwort / Trả lời:
+        1 → _____ &nbsp;&nbsp; 2 → _____ &nbsp;&nbsp; 3 → _____
+      </div>
+    </div>
+  </div>
+
+  <!-- Ü2 sch/st/sp -->
+  <div class="section">
+    <div class="section-title st-teal">✏️ Übung 2 — st oder sp? <span class="section-hint">Ergänze die Lücke.</span></div>
+    <div class="section-body">
+      <div class="tip">💡 Am Wortanfang klingt st/sp wie „scht/schp"!</div>
+      <div class="item"><span class="num num-teal">1.</span> 🛣️ &nbsp; ___raße</div>
+      <div class="item"><span class="num num-teal">2.</span> ⚽ &nbsp; ___ielen</div>
+    </div>
+  </div>
+</div>
+
+<!-- Ü3 ich-Laut oder ach-Laut -->
+<div class="section">
+  <div class="section-title st-green">✏️ Übung 3 — ich-Laut oder ach-Laut? <span class="section-hint">Sortiere die Wörter in die passende Spalte. / Xếp từ vào đúng cột.</span></div>
+  <div class="section-body">
+    <div class="wordpool">
+      <span>ich</span><span>Buch</span><span>Milch</span><span>Bach</span><span>Küche</span><span>Woche</span><span>auch</span><span>München</span><span>Kuchen</span><span>nicht</span>
+    </div>
+    <div class="sortbox">
+      <div class="sortcol left">
+        <h5>🟢 ich-Laut [ç] — weich</h5>
+        <div class="line" style="margin-bottom:10px"></div>
+        <div class="line" style="margin-bottom:10px"></div>
+        <div class="line" style="margin-bottom:10px"></div>
+        <div class="line" style="margin-bottom:10px"></div>
+        <div class="line"></div>
+      </div>
+      <div class="sortcol right">
+        <h5>🔴 ach-Laut [x] — hart</h5>
+        <div class="line" style="margin-bottom:10px"></div>
+        <div class="line" style="margin-bottom:10px"></div>
+        <div class="line" style="margin-bottom:10px"></div>
+        <div class="line" style="margin-bottom:10px"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="two">
+  <!-- Ü4 Auslautverhärtung -->
+  <div class="section">
+    <div class="section-title st-orange">✏️ Übung 4 — Wie klingt der letzte Laut? <span class="section-hint">Schreibe den Endlaut [p], [t] oder [k].</span></div>
+    <div class="section-body">
+      <div class="item"><span class="num num-orange">1.</span> der Urlau<u>b</u> → Endlaut [ <div class="line" style="max-width:40px"></div> ]</div>
+      <div class="item"><span class="num num-orange">2.</span> der Hun<u>d</u> → Endlaut [ <div class="line" style="max-width:40px"></div> ]</div>
+      <div class="item"><span class="num num-orange">3.</span> der We<u>g</u> → Endlaut [ <div class="line" style="max-width:40px"></div> ]</div>
+      <div class="item"><span class="num num-orange">4.</span> das Bil<u>d</u> → Endlaut [ <div class="line" style="max-width:40px"></div> ]</div>
+    </div>
+  </div>
+
+  <!-- Ü5 Z oder R -->
+  <div class="section">
+    <div class="section-title st-red">✏️ Übung 5 — Z oder R? <span class="section-hint">Ergänze den fehlenden Buchstaben.</span></div>
+    <div class="section-body">
+      <div class="item"><span class="num num-red">1.</span> 🚂 &nbsp; ___ug</div>
+      <div class="item"><span class="num num-red">2.</span> 💶 &nbsp; be___ahlen</div>
+      <div class="item"><span class="num num-red">3.</span> 👨 &nbsp; der B___uder</div>
+    </div>
+  </div>
+</div>
+
+<!-- Ü6 Sprechen -->
+<div class="section">
+  <div class="section-title st-blue">🗣️ Übung 6 — Sprechen: Lippenrundung üben <span class="section-hint">Lies laut vor und achte auf die Buchstaben Ö &amp; Ü. / Đọc to và chú ý các chữ Ö và Ü.</span></div>
+  <div class="section-body">
+    <div class="tip">💡 Ö = Lippen rund wie „O" + Zunge wie „E" &nbsp;·&nbsp; Ü = Lippen rund wie „U" + Zunge wie „I"</div>
+    <div class="item" style="display:block">
+      <em>„Mein Bruder hört Musik über Kopfhörer und trinkt müde einen Löffel Öl."</em>
+    </div>
+    <div style="margin-top:8px;font-size:11px;color:#555">Wie oft siehst und sprichst du Ö? _____ &nbsp;&nbsp; Wie oft siehst und sprichst du Ü? _____</div>
+  </div>
+</div>
+
+<div class="answer-box">
+  <div class="answer-title">✅ Antworten / Đáp án</div>
+  <div class="ar"><strong>Ü1:</strong> 1 – B (schön → Ö) &nbsp; 2 – C (Übung → Ü) &nbsp; 3 – A (Ärzte → Ä)</div>
+  <div class="ar"><strong>Ü2:</strong> 1. St (Straße) &nbsp; 2. Sp (spielen)</div>
+  <div class="ar"><strong>Ü3:</strong> ich-Laut: ich, Milch, Küche, München, nicht &nbsp;|&nbsp; ach-Laut: Buch, Bach, Woche, auch, Kuchen</div>
+  <div class="ar"><strong>Ü4:</strong> 1. [p] (Urlaub) &nbsp; 2. [t] (Hund) &nbsp; 3. [k] (Weg) &nbsp; 4. [t] (Bild) — Die Schreibweise bleibt unverändert.</div>
+  <div class="ar"><strong>Ü5:</strong> 1. Zug &nbsp; 2. bezahlen &nbsp; 3. Bruder</div>
+  <div class="ar"><strong>Ü6:</strong> Individuelle Aussprache — vom Lehrer korrigiert. Der Buchstabe Ö erscheint 4× (h<u>ö</u>rt, Kopfh<u>ö</u>rer, L<u>ö</u>ffel, <u>Ö</u>l), der Buchstabe Ü erscheint 2× (<u>ü</u>ber, m<u>ü</u>de). / Phần phát âm do giáo viên sửa trực tiếp. Chữ Ö xuất hiện 4 lần, chữ Ü xuất hiện 2 lần.</div>
+</div>
+
+</body>
+</html>

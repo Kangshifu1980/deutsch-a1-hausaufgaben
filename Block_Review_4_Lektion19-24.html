@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Block-Review 4 — Lektion 19–24</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 1.4; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #d97706; padding-bottom: 6px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 18px; font-weight: 700; color: #78350f; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11.5px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #fef3c7; color: #92400e; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.teil-title { font-size: 14px; font-weight: 800; letter-spacing: 0.4px; color: #78350f; margin: 2px 0 2px 0; }
+.teil-sub { font-size: 10.5px; color: #6b7280; margin-bottom: 10px; }
+.instr-de { font-size: 10.5px; color: #374151; font-style: italic; }
+.instr-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 6px; }
+.ubung-header { background: #78350f; color: white; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px 6px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 6px 6px; padding: 8px 10px; margin-bottom: 10px; }
+.fill-line { display: flex; align-items: baseline; gap: 5px; font-size: 11px; margin-bottom: 6px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 24px; font-weight: 700; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 70px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 320px; display: inline-block; height: 14px; }
+.vn-word { color: #0f766e; font-size: 9.5px; font-style: italic; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+table.vocab { width: 100%; border-collapse: collapse; margin-bottom: 4px; table-layout: fixed; }
+table.vocab th { background: #78350f; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #92400e; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10px; vertical-align: top; line-height: 1.25; }
+table.vocab tr:nth-child(even) td { background: #fffbeb; }
+table.vocab.compact td, table.vocab.compact th { padding: 2px 6px; }
+.lesetext { background: #fffbeb; border: 1px solid #fde68a; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; font-size: 11.5px; line-height: 1.65; color: #292524; }
+.lesetext p { margin-bottom: 8px; }
+.lesetext p:last-child { margin-bottom: 0; }
+.mc-block { margin-bottom: 8px; }
+.mc-frage { font-size: 11px; font-weight: 700; color: #78350f; margin-bottom: 3px; }
+.mc-optionen { display: flex; gap: 16px; font-size: 11px; color: #1a1a1a; margin-bottom: 6px; padding-left: 4px; flex-wrap: wrap; }
+.mc-optionen span { display: flex; align-items: center; gap: 4px; }
+.mc-kreis { display: inline-block; width: 10px; height: 10px; border: 1.3px solid #64748b; border-radius: 50%; flex-shrink: 0; }
+.rf-row { display: flex; align-items: center; gap: 10px; font-size: 11px; margin-bottom: 6px; }
+.rf-row .satz { flex: 1; }
+.rf-optionen { display: flex; gap: 10px; }
+.rf-optionen span { display: flex; align-items: center; gap: 3px; font-size: 10px; color: #64748b; }
+.rf-kreis { display: inline-block; width: 10px; height: 10px; border: 1.3px solid #64748b; border-radius: 50%; }
+.dialog-box { border: 0.5px solid #fde68a; border-radius: 6px; background: #fffbeb; padding: 8px 10px; margin-bottom: 8px; }
+.dialog-sub { font-size: 10.5px; font-weight: 700; color: #92400e; margin: 2px 0 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+.schreib-line { border-bottom: 1px solid #94a3b8; min-height: 20px; margin-bottom: 10px; font-size: 11px; padding-left: 4px; }
+.schreib-line .num { color: #64748b; font-weight: 700; }
+.formular { border: 1px solid #fde68a; border-radius: 8px; background: #fffbeb; padding: 10px 14px; margin-bottom: 10px; }
+.formular-zeile { display: flex; align-items: baseline; gap: 8px; font-size: 11px; margin-bottom: 8px; }
+.formular-label { min-width: 130px; font-weight: 700; color: #78350f; }
+.formular-vn { font-size: 9px; color: #0f766e; font-style: italic; margin-left: 4px; }
+.checkliste { background: #fffbeb; border: 0.5px solid #f59e0b; border-radius: 6px; padding: 8px 12px; margin-top: 8px; }
+.checkliste h4 { font-size: 11px; font-weight: 700; color: #78350f; margin-bottom: 5px; }
+.check-item { font-size: 10.5px; color: #78350f; margin-bottom: 4px; display: flex; align-items: baseline; gap: 6px; }
+.check-item .cb { display: inline-block; width: 9px; height: 9px; border: 1.3px solid #92400e; border-radius: 2px; flex-shrink: 0; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 8px 12px; margin-top: 6px; }
+.antworten h4 { font-size: 11px; font-weight: 700; color: #14532d; margin-bottom: 4px; }
+.antworten p { font-size: 10.5px; color: #166534; margin-bottom: 5px; line-height: 1.5; }
+.footer { margin-top: 10px; padding-top: 5px; border-top: 0.5px solid #e2e8f0; font-size: 9.5px; color: #94a3b8; display: flex; justify-content: space-between; }
+.titelseite { text-align: center; padding-top: 45px; }
+.titelseite .flag { font-size: 40px; margin-bottom: 12px; }
+.titelseite h1 { font-size: 27px; color: #78350f; margin-bottom: 8px; }
+.titelseite h2 { font-size: 15px; color: #475569; font-weight: 500; margin-bottom: 4px; }
+.titelseite .vn { font-size: 13px; color: #0f766e; font-style: italic; margin-bottom: 22px; }
+.plan-table { width: 80%; margin: 0 auto; border-collapse: collapse; }
+.plan-table th { background: #78350f; color: white; font-size: 11px; padding: 7px 10px; text-align: left; }
+.plan-table td { padding: 7px 10px; font-size: 11px; border-bottom: 0.5px solid #e2e8f0; text-align: left; }
+.plan-table tr:nth-child(even) td { background: #fffbeb; }
+.lekt-tags { margin-top: 24px; font-size: 10.5px; color: #64748b; }
+.lekt-tag { display: inline-block; background: #fef3c7; color: #78350f; padding: 3px 10px; border-radius: 20px; margin: 3px 4px; font-weight: 600; }
+.block-banner { background: linear-gradient(90deg, #fef3c7, #fde68a); border: 1px solid #f59e0b; border-radius: 8px; padding: 10px 16px; margin-top: 22px; }
+.block-banner .titel { font-size: 13px; font-weight: 800; color: #78350f; margin-bottom: 3px; }
+.block-banner .text { font-size: 10.5px; color: #92400e; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════════════════════ SEITE 1 / 5 — TITEL ═════════════════════════════ -->
+<div class="page">
+  <div class="titelseite">
+    <div class="flag">📕</div>
+    <h1>Deutsch A1 — Block-Review 4</h1>
+    <h2>Kommunikation &amp; Prüfungsvorbereitung — Lektion 19–24</h2>
+    <div class="vn">Kiểm tra tổng kết Khối 4: Giao tiếp &amp; Chuẩn bị thi — Bài 19–24</div>
+
+    <table class="plan-table">
+      <tr><th>Teil</th><th>Inhalt</th></tr>
+      <tr><td><strong>A</strong> — Leseverstehen</td><td>Lesetext (200–300 Wörter) · Richtig/Falsch · Multiple Choice · Informationen finden</td></tr>
+      <tr><td><strong>B</strong> — Grammatik</td><td>gemischte Wiederholung aus Lektion 19–24 und dem ganzen Kurs</td></tr>
+      <tr><td><strong>C</strong> — Schreiben ⭐</td><td>E-Mail/Brief (8–12 Sätze) · kleine Schreibaufgabe</td></tr>
+      <tr><td><strong>D</strong> — Übersetzung &amp; Fehler</td><td>anspruchsvollere Sätze · typische A1-Fehler</td></tr>
+    </table>
+
+    <div class="lekt-tags">
+      <div>Themen aus Lektion 19–24:</div>
+      <span class="lekt-tag">✅ Perfekt (haben/sein)</span>
+      <span class="lekt-tag">⚖️ Komparativ &amp; Superlativ</span>
+      <span class="lekt-tag">🔗 weil / denn / dass / aber / und</span>
+      <span class="lekt-tag">✉️ E-Mail &amp; Brief</span>
+      <span class="lekt-tag">🎓 Wiederholung des ganzen Kurses</span>
+    </div>
+
+    <div class="block-banner">
+      <div class="titel">🎯 Fokus dieses Block-Reviews</div>
+      <div class="text">Der prüfungsorientierteste Block — mit dem längsten Lesetext und einem klaren Schwerpunkt auf dem Schreiben, ähnlich wie in der Goethe-A1-Prüfung.</div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 4 · Lektion 19–24</span>
+    <span>Seite 1 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 2 / 5 — TEIL A ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📕 Block-Review 4</h1>
+      <h2>Lektion 19–24 / Bài 19–24</h2>
+    </div>
+    <div class="badge">Teil A — Leseverstehen</div>
+  </div>
+
+  <div class="teil-title">TEIL A — LESEVERSTEHEN</div>
+  <div class="teil-sub">Đọc hiểu</div>
+
+  <div class="ubung-header">📖 Lies die E-Mail / Đọc email</div>
+  <div class="lesetext">
+    <p style="font-weight:700; color:#78350f;">Betreff: Mein Wochenende in Hamburg</p>
+    <p>Liebe Sara,<br>ich hoffe, es geht dir gut! Ich möchte dir von meinem Wochenende erzählen, denn ich habe etwas ganz Besonderes erlebt.</p>
+    <p>Am Freitag bin ich mit dem Zug nach Hamburg gefahren. Die Fahrt hat drei Stunden gedauert, aber ich habe im Zug gearbeitet und ein Buch gelesen. Am Abend habe ich meine Freundin Lena getroffen, und wir haben zusammen in einem kleinen Restaurant gegessen. Das Essen dort war lecker, aber ich finde, dass die Restaurants in Berlin günstiger sind als in Hamburg.</p>
+    <p>Am Samstag sind wir früh aufgestanden und haben die Stadt besichtigt. Wir haben den Hafen besucht — er ist wirklich beeindruckend! Danach haben wir eingekauft, und ich habe eine neue Jacke gekauft. Sie war teurer als meine alte Jacke, aber die Qualität ist viel besser.</p>
+    <p>Am Abend hat es leider geregnet, und wir sind ins Kino gegangen, weil das Wetter zu schlecht für einen Spaziergang war. Der Film war lustiger, als ich gedacht habe!</p>
+    <p>Am Sonntag bin ich mit dem Zug zurückgefahren. Ich glaube, dass Hamburg eine der schönsten Städte Deutschlands ist. Nächstes Jahr möchte ich wieder dorthin fahren, aber dann möchte ich länger bleiben.</p>
+    <p>Schreib mir bald zurück und erzähl mir auch von deinem Wochenende!<br>Viele Grüße,<br>Deine Mia</p>
+  </div>
+
+  <div class="ubung-header">✅ A1 — Richtig oder falsch? / Đúng hay sai?</div>
+  <div class="ubung-body">
+    <div class="rf-row"><span class="num">1.</span><span class="satz">Mia ist mit dem Auto nach Hamburg gefahren.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">2.</span><span class="satz">Mia findet die Restaurants in Berlin günstiger.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">3.</span><span class="satz">Mia hat keine Jacke gekauft.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">4.</span><span class="satz">Am Abend ist das Wetter schlecht.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+    <div class="rf-row"><span class="num">5.</span><span class="satz">Mia möchte nächstes Jahr wieder nach Hamburg fahren.</span><span class="rf-optionen"><span><span class="rf-kreis"></span>richtig</span><span><span class="rf-kreis"></span>falsch</span></span></div>
+  </div>
+
+  <div class="ubung-header">🔘 A2 — Multiple Choice</div>
+  <div class="ubung-body">
+    <div class="mc-block">
+      <div class="mc-frage">1. Wie ist Mia nach Hamburg gefahren?</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span>a) mit dem Auto</span><span><span class="mc-kreis"></span>b) mit dem Zug</span><span><span class="mc-kreis"></span>c) mit dem Flugzeug</span></div>
+    </div>
+    <div class="mc-block">
+      <div class="mc-frage">2. Was haben Mia und Lena am Samstag gemacht?</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span>a) sie sind ins Kino gegangen</span><span><span class="mc-kreis"></span>b) sie haben die Stadt besichtigt</span><span><span class="mc-kreis"></span>c) sie haben gearbeitet</span></div>
+    </div>
+    <div class="mc-block">
+      <div class="mc-frage">3. Warum sind sie am Abend ins Kino gegangen?</div>
+      <div class="mc-optionen"><span><span class="mc-kreis"></span>a) weil der Film lustig war</span><span><span class="mc-kreis"></span>b) weil das Wetter schlecht war</span><span><span class="mc-kreis"></span>c) weil das Restaurant zu war</span></div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🔍 A3 — Informationen finden / Tìm thông tin</div>
+  <div class="ubung-body">
+    <div class="instr-de">Beantworte die Fragen mit Informationen aus dem Text.</div>
+    <div class="instr-vn">Hãy trả lời các câu hỏi bằng thông tin trong bài đọc.</div>
+    <div class="fill-line"><span class="num">1.</span> Wie lange hat die Zugfahrt gedauert? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Was hat Mia in Hamburg gekauft? <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Was findet Mia besser: die alte oder die neue Jacke? <span class="blank-long"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 4 · Lektion 19–24</span>
+    <span>Seite 2 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 3 / 5 — TEIL B ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📕 Block-Review 4</h1>
+      <h2>Lektion 19–24 / Bài 19–24</h2>
+    </div>
+    <div class="badge">Teil B — Grammatik</div>
+  </div>
+
+  <div class="teil-title">TEIL B — GRAMMATIK</div>
+  <div class="teil-sub">Gemischte Übungen aus Lektion 19–24 — abwechslungsreiche Formate / Bài tập ngữ pháp tổng hợp — nhiều dạng khác nhau</div>
+
+  <div class="ubung-header">🔧 B1 — Perfekt: „haben" oder „sein"?</div>
+  <div class="ubung-body">
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> gestern nach Wien <span class="blank"></span>. <span class="vn-word">(fahren)</span></div>
+        <div class="fill-line"><span class="num">2.</span> Wir <span class="blank"></span> Nudeln <span class="blank"></span>. <span class="vn-word">(kochen)</span></div>
+        <div class="fill-line"><span class="num">3.</span> Sie <span class="blank"></span> ihren Bruder <span class="blank"></span>. <span class="vn-word">(anrufen)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Du <span class="blank"></span> früh <span class="blank"></span>. <span class="vn-word">(aufstehen)</span></div>
+        <div class="fill-line"><span class="num">5.</span> Er <span class="blank"></span> ein Buch <span class="blank"></span>. <span class="vn-word">(lesen)</span></div>
+        <div class="fill-line"><span class="num">6.</span> Wir <span class="blank"></span> ins Kino <span class="blank"></span>. <span class="vn-word">(gehen)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">⚖️ B2 — Komparativ &amp; Superlativ</div>
+  <div class="ubung-body">
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Die U-Bahn ist <span class="blank"></span> als das Auto. <span class="vn-word">(schnell)</span></div>
+        <div class="fill-line"><span class="num">2.</span> Das ist die <span class="blank"></span> Stadt Deutschlands. <span class="vn-word">(groß)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">3.</span> Mein Bruder ist <span class="blank"></span> als ich. <span class="vn-word">(jung)</span></div>
+        <div class="fill-line"><span class="num">4.</span> Das war der <span class="blank"></span> Film des Jahres. <span class="vn-word">(gut)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🔗 B3 — Konjunktionen-Mix: und, aber, weil, denn, dass</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> Ich finde, <span class="blank"></span> Deutsch nicht so schwer ist.</div>
+    <div class="fill-line"><span class="num">2.</span> Ich lerne Deutsch, <span class="blank"></span> ich in Deutschland arbeiten möchte.</div>
+    <div class="fill-line"><span class="num">3.</span> Ich bin froh, <span class="blank"></span> ich habe viele Freunde gefunden.</div>
+    <div class="fill-line"><span class="num">4.</span> Der Brief ist fertig, <span class="blank"></span> die Anrede fehlt noch.</div>
+    <div class="fill-line"><span class="num">5.</span> Ich schreibe dir, <span class="blank"></span> ich lade dich ein.</div>
+    <div class="fill-line"><span class="num">6.</span> Sie kommt später, <span class="blank"></span> sie noch arbeiten muss.</div>
+  </div>
+
+  <div class="ubung-header">📚 B4 — Wortschatz aus dem ganzen Kurs: Definitionen</div>
+  <div class="ubung-body">
+    <div class="instr-de">Lies die Definition und ergänze das passende Wort aus der Wortbank.</div>
+    <div class="instr-vn">Đọc định nghĩa và điền từ phù hợp từ ngân hàng từ vựng.</div>
+    <div class="wortbank">
+      der Beruf &nbsp;·&nbsp; die Wegbeschreibung &nbsp;·&nbsp; die Vergangenheit &nbsp;·&nbsp; der Vergleich &nbsp;·&nbsp; die Korrespondenz &nbsp;·&nbsp; der Tagesablauf
+    </div>
+    <div class="fill-line"><span class="num">1.</span> Wenn man zwei Dinge miteinander vergleicht, macht man einen <span class="blank"></span>.</div>
+    <div class="fill-line"><span class="num">2.</span> Was du jeden Tag machst, vom Aufstehen bis zum Schlafengehen, ist dein <span class="blank"></span>.</div>
+    <div class="fill-line"><span class="num">3.</span> Wenn du erklärst, wie man zu einem Ort kommt, gibst du eine <span class="blank"></span>.</div>
+    <div class="fill-line"><span class="num">4.</span> Briefe und E-Mails, die man mit anderen austauscht, nennt man <span class="blank"></span>.</div>
+    <div class="fill-line"><span class="num">5.</span> Was du beruflich machst, zum Beispiel Lehrer oder Ärztin, ist dein <span class="blank"></span>.</div>
+    <div class="fill-line"><span class="num">6.</span> Alles, was schon passiert ist, gehört zur <span class="blank"></span>.</div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 4 · Lektion 19–24</span>
+    <span>Seite 3 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 4 / 5 — TEIL C ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📕 Block-Review 4</h1>
+      <h2>Lektion 19–24 / Bài 19–24</h2>
+    </div>
+    <div class="badge">Teil C — Schreiben</div>
+  </div>
+
+  <div class="teil-title">TEIL C — SCHREIBEN ⭐ SCHWERPUNKT</div>
+  <div class="teil-sub">Viết — Trọng tâm của bài kiểm tra này</div>
+
+  <div class="ubung-header">✉️ C1 — E-Mail oder Brief schreiben</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schreibe eine E-Mail an einen Freund / eine Freundin über dein letztes Wochenende oder deinen letzten Ausflug (<strong>40–60 Wörter</strong>). Erzähle, was du gemacht hast (Perfekt), vergleiche zwei Dinge (Komparativ/Superlativ), und benutze mindestens 2 verschiedene Konjunktionen (weil/denn/dass/aber/und). Du kannst auch erfundene Daten benutzen.</div>
+    <div class="instr-vn">Viết một email cho bạn bè về cuối tuần hoặc chuyến đi gần nhất của bạn (<strong>40–60 từ</strong>). Kể lại bạn đã làm gì (thì Perfekt), so sánh hai điều (so sánh hơn/nhất), và dùng ít nhất 2 liên từ khác nhau (weil/denn/dass/aber/und). Bạn cũng có thể dùng thông tin tự nghĩ ra.</div>
+    <div class="schreib-line"><span class="num">1.</span></div>
+    <div class="schreib-line"><span class="num">2.</span></div>
+    <div class="schreib-line"><span class="num">3.</span></div>
+    <div class="schreib-line"><span class="num">4.</span></div>
+    <div class="schreib-line"><span class="num">5.</span></div>
+    <div class="schreib-line"><span class="num">6.</span></div>
+    <div class="schreib-line"><span class="num">7.</span></div>
+    <div class="schreib-line"><span class="num">8.</span></div>
+    <div class="schreib-line"><span class="num">9.</span></div>
+    <div class="schreib-line"><span class="num">10.</span></div>
+    <div class="schreib-line"><span class="num">11.</span></div>
+    <div class="schreib-line"><span class="num">12.</span></div>
+
+    <div class="checkliste">
+      <h4>✅ Checkliste — vor dem Abgeben prüfen! / Danh sách kiểm tra — kiểm tra trước khi nộp!</h4>
+      <div class="check-item"><span class="cb"></span> Anrede und Grußformel vorhanden?</div>
+      <div class="check-item"><span class="cb"></span> Mindestens 4× Perfekt verwendet?</div>
+      <div class="check-item"><span class="cb"></span> Mindestens 1× Komparativ oder Superlativ verwendet?</div>
+      <div class="check-item"><span class="cb"></span> Mindestens 2 verschiedene Konjunktionen verwendet?</div>
+    </div>
+  </div>
+
+  <div class="ubung-header">✏️ C2 — Kleine Schreibaufgabe: Meinung, Tagesablauf oder Erlebnis</div>
+  <div class="ubung-body">
+    <div class="instr-de">Wähle ein Thema und schreibe 4–5 Sätze: (a) Deine Meinung zum Deutschlernen, (b) dein typischer Tagesablauf, oder (c) ein besonderes Erlebnis (Perfekt).</div>
+    <div class="instr-vn">Chọn một chủ đề và viết 4–5 câu: (a) ý kiến của bạn về việc học tiếng Đức, (b) sinh hoạt hằng ngày của bạn, hoặc (c) một trải nghiệm đặc biệt (thì Perfekt).</div>
+    <div class="schreib-line"><span class="num">1.</span></div>
+    <div class="schreib-line"><span class="num">2.</span></div>
+    <div class="schreib-line"><span class="num">3.</span></div>
+    <div class="schreib-line"><span class="num">4.</span></div>
+    <div class="schreib-line"><span class="num">5.</span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 4 · Lektion 19–24</span>
+    <span>Seite 4 / 5</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 5 / 5 — TEIL D & ANTWORTEN ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>📕 Block-Review 4</h1>
+      <h2>Lektion 19–24 / Bài 19–24</h2>
+    </div>
+    <div class="badge">Teil D — Übersetzung &amp; Fehler</div>
+  </div>
+
+  <div class="teil-title">TEIL D — ÜBERSETZUNG / FEHLER FINDEN</div>
+  <div class="teil-sub">Dịch câu &amp; sửa lỗi</div>
+
+  <div class="ubung-header">🌐 D1 — Übersetze ins Deutsche</div>
+  <div class="ubung-body">
+    <div class="schreib-line"><span class="num">1.</span> Tôi đã đi Berlin vào cuối tuần trước và trời đã mưa cả ngày. </div>
+    <div class="schreib-line"><span class="num">2.</span> Tôi thấy thành phố này đẹp hơn thành phố kia. </div>
+    <div class="schreib-line"><span class="num">3.</span> Tôi học tiếng Đức vì tôi muốn sống ở Đức. </div>
+    <div class="schreib-line"><span class="num">4.</span> Chúng tôi đã mua một cái tủ mới, nhưng nó đắt hơn cái cũ. </div>
+  </div>
+
+  <div class="ubung-header">🔍 D2 — Fehler finden (typische A1-Fehler)</div>
+  <div class="ubung-body">
+    <div class="fill-line"><span class="num">1.</span> Ich bin gestern Nudeln gekocht. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Er ist größer wie ich. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Ich glaube, dass der Kurs interessant. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Wir haben gestern gegangen ins Kino. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+  </div>
+
+  <div class="antworten">
+    <h4>✅ ANTWORTEN / Đáp án</h4>
+    <p><strong>A1 (Richtig/Falsch):</strong> 1. falsch &nbsp; 2. richtig &nbsp; 3. falsch &nbsp; 4. richtig &nbsp; 5. richtig</p>
+    <p><strong>A2 (Multiple Choice):</strong> 1. b &nbsp; 2. b &nbsp; 3. b</p>
+    <p><strong>A3 (Informationen finden):</strong> 1. Drei Stunden. &nbsp; 2. Eine neue Jacke. &nbsp; 3. Die neue — die Qualität ist besser.</p>
+    <p><strong>B1 (Perfekt haben/sein):</strong> 1. bin / gefahren &nbsp; 2. haben / gekocht &nbsp; 3. hat / angerufen &nbsp; 4. bist / aufgestanden &nbsp; 5. hat / gelesen &nbsp; 6. sind / gegangen</p>
+    <p><strong>B2 (Komparativ/Superlativ):</strong> 1. schneller &nbsp; 2. größte &nbsp; 3. jünger &nbsp; 4. beste</p>
+    <p><strong>B3 (Konjunktionen-Mix):</strong> 1. dass &nbsp; 2. weil &nbsp; 3. denn &nbsp; 4. aber &nbsp; 5. und &nbsp; 6. weil</p>
+    <p><strong>B4 (Wortschatz):</strong> 1. c &nbsp; 2. f &nbsp; 3. e &nbsp; 4. b &nbsp; 5. a &nbsp; 6. d</p>
+    <p><strong>C1 &amp; C2:</strong> Freie Antwort — der Lehrer korrigiert individuell. <span style="font-style:italic;">Câu trả lời tự do — giáo viên chữa trực tiếp.</span></p>
+    <p><strong>D1 (Übersetzung):</strong> 1. Ich bin letztes Wochenende nach Berlin gefahren, und es hat den ganzen Tag geregnet. &nbsp; 2. Ich finde, dass diese Stadt schöner ist als die andere. &nbsp; 3. Ich lerne Deutsch, weil ich in Deutschland leben möchte. &nbsp; 4. Wir haben einen neuen Schrank gekauft, aber er ist teurer als der alte.</p>
+    <p><strong>D2 (Fehler finden):</strong> 1. Ich habe gestern Nudeln gekocht. &nbsp; 2. Er ist größer als ich. &nbsp; 3. Ich glaube, dass der Kurs interessant ist. &nbsp; 4. Wir sind gestern ins Kino gegangen.</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Block-Review 4 · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 5 / 5</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch A1 — Mini-Review — Lektion 6–10</title>
+<style>
+@media print {
+  body { margin: 0; }
+  .page { page-break-after: always !important; padding: 12mm 14mm 8mm 14mm !important; margin: 0 !important; box-shadow: none !important; min-height: 0 !important; }
+  .page:last-child { page-break-after: avoid !important; }
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 1.4; color: #1a1a1a; background: #f5f5f5; }
+.page { background: white; width: 210mm; min-height: 297mm; margin: 12px auto; padding: 12mm 14mm 8mm 14mm; box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+.doc-header { border-bottom: 2.5px solid #dc2626; padding-bottom: 6px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: flex-end; }
+.doc-header h1 { font-size: 18px; font-weight: 700; color: #7f1d1d; letter-spacing: 0.3px; }
+.doc-header h2 { font-size: 11.5px; font-weight: 500; color: #475569; margin-top: 2px; }
+.doc-header .badge { font-size: 10px; font-weight: 600; background: #fee2e2; color: #b91c1c; padding: 3px 10px; border-radius: 20px; white-space: nowrap; }
+.teil-title { font-size: 14px; font-weight: 800; letter-spacing: 0.4px; color: #7f1d1d; margin: 2px 0 2px 0; }
+.teil-sub { font-size: 10.5px; color: #6b7280; margin-bottom: 10px; }
+.section-title { font-size: 12px; font-weight: 700; letter-spacing: 0.6px; color: #7f1d1d; margin: 14px 0 6px 0; border-bottom: 0.5px solid #e2e8f0; padding-bottom: 3px; }
+.instr-de { font-size: 10.5px; color: #374151; font-style: italic; }
+.instr-vn { font-size: 10px; color: #0f766e; font-style: italic; margin-bottom: 6px; }
+.ubung-header { background: #7f1d1d; color: white; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px 6px 0 0; }
+.ubung-body { border: 0.5px solid #cbd5e1; border-top: none; border-radius: 0 0 6px 6px; padding: 8px 10px; margin-bottom: 10px; }
+.fill-line { display: flex; align-items: baseline; gap: 5px; font-size: 11px; margin-bottom: 6px; flex-wrap: wrap; }
+.fill-line .num { color: #64748b; min-width: 24px; font-weight: 700; }
+.blank { border-bottom: 1px solid #94a3b8; min-width: 90px; display: inline-block; }
+.blank-long { border-bottom: 1px solid #94a3b8; min-width: 340px; display: inline-block; height: 14px; }
+.vn-word { color: #0f766e; font-size: 9.5px; font-style: italic; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
+.wortsalat-block { margin-bottom: 10px; }
+.wortsalat { background: #fef2f2; border: 0.5px dashed #94a3b8; border-radius: 5px; padding: 4px 9px; font-size: 10.5px; color: #374151; margin-bottom: 3px; font-style: italic; }
+.wortsalat .vn-word { display: block; margin-top: 1px; }
+table.vocab { width: 100%; border-collapse: collapse; margin-bottom: 4px; table-layout: fixed; }
+table.vocab th { background: #7f1d1d; color: white; font-size: 9.5px; font-weight: 700; padding: 3px 6px; text-align: left; border: 0.5px solid #b91c1c; }
+table.vocab td { padding: 2.5px 6px; border: 0.5px solid #e2e8f0; font-size: 10px; vertical-align: top; line-height: 1.25; }
+table.vocab tr:nth-child(even) td { background: #fef2f2; }
+table.vocab.compact td, table.vocab.compact th { padding: 2px 6px; }
+.hinweis { font-size: 10px; color: #374151; font-style: italic; margin-top: 4px; }
+.hinweis .vn-word { display: block; }
+.dialog-box { border: 0.5px solid #fecaca; border-radius: 6px; background: #fef2f2; padding: 8px 10px; margin-bottom: 8px; }
+.dialog-sub { font-size: 10.5px; font-weight: 700; color: #b91c1c; margin: 2px 0 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+.dialog-line { font-size: 11px; margin-bottom: 5px; }
+.dialog-line .speaker { font-weight: 700; color: #991b1b; margin-right: 4px; }
+.schreib-line { border-bottom: 1px solid #94a3b8; min-height: 22px; margin-bottom: 12px; font-size: 11px; padding-left: 4px; }
+.schreib-line .num { color: #64748b; font-weight: 700; }
+.mc-block { margin-bottom: 10px; }
+.mc-frage { font-size: 11px; font-weight: 700; color: #7f1d1d; margin-bottom: 3px; }
+.mc-vn { font-size: 10px; color: #0f766e; font-style: italic; font-weight: 400; margin-bottom: 3px; }
+.mc-optionen { display: flex; gap: 16px; font-size: 11px; color: #1a1a1a; margin-bottom: 8px; padding-left: 4px; }
+.mc-optionen span { display: flex; align-items: center; gap: 4px; }
+.mc-kreis { display: inline-block; width: 10px; height: 10px; border: 1.3px solid #64748b; border-radius: 50%; flex-shrink: 0; }
+.kat-box { border: 0.5px solid #cbd5e1; border-radius: 6px; padding: 8px 10px; min-height: 40px; margin-bottom: 4px; }
+.kat-label { font-size: 10.5px; font-weight: 700; color: #7f1d1d; margin-bottom: 4px; }
+.wortbank { background: #fef2f2; border: 0.5px dashed #b91c1c; border-radius: 6px; padding: 8px 10px; font-size: 11px; color: #374151; margin-bottom: 10px; line-height: 1.7; }
+.antworten { background: #f0fdf4; border: 0.5px solid #86efac; border-radius: 6px; padding: 8px 12px; margin-top: 6px; }
+.antworten h4 { font-size: 11px; font-weight: 700; color: #14532d; margin-bottom: 4px; }
+.antworten p { font-size: 10.5px; color: #166534; margin-bottom: 5px; line-height: 1.5; }
+.footer { margin-top: 10px; padding-top: 5px; border-top: 0.5px solid #e2e8f0; font-size: 9.5px; color: #94a3b8; display: flex; justify-content: space-between; }
+.titelseite { text-align: center; padding-top: 50px; }
+.titelseite .flag { font-size: 40px; margin-bottom: 12px; }
+.titelseite h1 { font-size: 28px; color: #7f1d1d; margin-bottom: 8px; }
+.titelseite h2 { font-size: 15px; color: #475569; font-weight: 500; margin-bottom: 4px; }
+.titelseite .vn { font-size: 13px; color: #0f766e; font-style: italic; margin-bottom: 26px; }
+.plan-table { width: 78%; margin: 0 auto; border-collapse: collapse; }
+.plan-table th { background: #7f1d1d; color: white; font-size: 11px; padding: 7px 10px; text-align: left; }
+.plan-table td { padding: 7px 10px; font-size: 11px; border-bottom: 0.5px solid #e2e8f0; text-align: left; }
+.plan-table tr:nth-child(even) td { background: #fef2f2; }
+.lekt-tags { margin-top: 30px; font-size: 10.5px; color: #64748b; }
+.lekt-tag { display: inline-block; background: #fee2e2; color: #7f1d1d; padding: 3px 10px; border-radius: 20px; margin: 3px 4px; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- ═════════════════════════════ SEITE 1 / 7 — TITEL ═════════════════════════════ -->
+<div class="page">
+  <div class="titelseite">
+    <div class="flag">🇩🇪</div>
+    <h1>Deutsch A1 — Mini-Review</h1>
+    <h2>Wiederholung: Lektion 6–10</h2>
+    <div class="vn">Ôn tập tổng hợp: Bài 6–10</div>
+
+    <table class="plan-table">
+      <tr><th>Teil</th><th>Inhalt</th></tr>
+      <tr><td><strong>A</strong> — Wortschatz</td><td>Zuordnen · Übersetzen · Synonyme &amp; Gegenteile · Kategorien</td></tr>
+      <tr><td><strong>B</strong> — Grammatik</td><td>gemischte Übungen aus allen 5 Lektionen</td></tr>
+      <tr><td><strong>C</strong> — Satzbau</td><td>Sätze bilden · umformen · Fehler finden</td></tr>
+      <tr><td><strong>D</strong> — Dialoge</td><td>Lücken · Antworten formulieren</td></tr>
+      <tr><td><strong>E</strong> — Übersetzung</td><td>Vietnamesisch → Deutsch</td></tr>
+    </table>
+
+    <div class="lekt-tags">
+      <div>Diese Wiederholung kombiniert Inhalte aus:</div>
+      <span class="lekt-tag">L6 · Familie / mein–dein</span>
+      <span class="lekt-tag">L7 · sein &amp; haben / Gegenteile</span>
+      <span class="lekt-tag">L8 · Akkusativ (Essen &amp; Trinken)</span>
+      <span class="lekt-tag">L9 · Einkaufen / möchten</span>
+      <span class="lekt-tag">L10 · Wohnung / Präpositionen</span>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 6–10</span>
+    <span>Seite 1 / 7</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 2 / 7 — TEIL A ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 6–10 / Ôn tập: Bài 6–10</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL A — WORTSCHATZ</div>
+  <div class="teil-sub">Từ vựng tổng hợp từ Bài 6–10</div>
+
+  <div class="ubung-header">🔗 A1 — Zuordnen / Nối từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schreibe den passenden Buchstaben in die mittlere Spalte. (Wörter aus mehreren Lektionen!)</div>
+    <div class="instr-vn">Hãy viết chữ cái phù hợp vào cột giữa. (Từ vựng từ nhiều bài khác nhau!)</div>
+    <table class="vocab compact">
+      <tr><th style="width:34%;">Deutsch</th><th style="width:10%;">Antwort</th><th style="width:56%;">Vietnamesisch</th></tr>
+      <tr><td>1. die Cousine</td><td></td><td rowspan="8" style="vertical-align:top; border-left:0.5px solid #e2e8f0; padding-top:3px; line-height:1.5;">
+        a) mệt &nbsp;·&nbsp; b) xúc xích &nbsp;·&nbsp; c) chị/em họ (nữ) &nbsp;·&nbsp; d) áo len &nbsp;·&nbsp; e) phòng ngủ &nbsp;·&nbsp; f) rau &nbsp;·&nbsp; g) cha mẹ &nbsp;·&nbsp; h) hành lang
+      </td></tr>
+      <tr><td>2. die Wurst</td><td></td></tr>
+      <tr><td>3. der Pullover</td><td></td></tr>
+      <tr><td>4. das Schlafzimmer</td><td></td></tr>
+      <tr><td>5. das Gemüse</td><td></td></tr>
+      <tr><td>6. die Eltern</td><td></td></tr>
+      <tr><td>7. müde</td><td></td></tr>
+      <tr><td>8. der Flur</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="ubung-header">🌐 A2 — Übersetzen / Dịch từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Übersetze die Wörter in die jeweils andere Sprache.</div>
+    <div class="instr-vn">Hãy dịch các từ sang ngôn ngữ còn lại.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> kaufen → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">2.</span> der Onkel → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">3.</span> die Schuhe → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">4.</span> der Teppich → <span class="blank"></span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">5.</span> hạnh phúc → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">6.</span> cái tủ → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">7.</span> cái áo khoác → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">8.</span> giá bao nhiêu? → <span class="blank"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">🔄 A3 — Synonyme &amp; Gegenteile / Từ đồng nghĩa &amp; trái nghĩa</div>
+  <div class="ubung-body">
+    <div class="instr-de">Verbinde jedes Adjektiv mit seinem Gegenteil. Schreibe den passenden Buchstaben.</div>
+    <div class="instr-vn">Hãy nối mỗi tính từ với từ trái nghĩa của nó. Viết chữ cái phù hợp.</div>
+    <table class="vocab compact">
+      <tr><th style="width:40%;">Adjektiv</th><th style="width:10%;">Antwort</th><th style="width:50%;">Gegenteil</th></tr>
+      <tr><td>1. traurig</td><td></td><td rowspan="6" style="vertical-align:top; border-left:0.5px solid #e2e8f0; padding-top:3px; line-height:1.5;">
+        a) satt &nbsp;·&nbsp; b) gesund &nbsp;·&nbsp; c) klein &nbsp;·&nbsp; d) fit &nbsp;·&nbsp; e) glücklich &nbsp;·&nbsp; f) entspannt
+      </td></tr>
+      <tr><td>2. hungrig</td><td></td></tr>
+      <tr><td>3. krank</td><td></td></tr>
+      <tr><td>4. groß</td><td></td></tr>
+      <tr><td>5. müde</td><td></td></tr>
+      <tr><td>6. gestresst</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="ubung-header">🗂️ A4 — Kategorien / Phân loại từ</div>
+  <div class="ubung-body">
+    <div class="instr-de">Sortiere die Wörter aus der Wortbank in die richtige Kategorie.</div>
+    <div class="instr-vn">Hãy sắp xếp các từ trong ngân hàng từ vựng vào đúng nhóm.</div>
+    <div class="wortbank">
+      der Cousin &nbsp;·&nbsp; die Jacke &nbsp;·&nbsp; der Schrank &nbsp;·&nbsp; müde &nbsp;·&nbsp; die Tante &nbsp;·&nbsp; die Mütze &nbsp;·&nbsp; das Sofa &nbsp;·&nbsp; hungrig &nbsp;·&nbsp; der Sohn &nbsp;·&nbsp; die Hose &nbsp;·&nbsp; die Lampe &nbsp;·&nbsp; gestresst
+    </div>
+    <div class="two-col">
+      <div>
+        <div class="kat-box"><div class="kat-label">Familie <span class="vn-word">(gia đình)</span></div></div>
+        <div class="kat-box"><div class="kat-label">Kleidung <span class="vn-word">(trang phục)</span></div></div>
+      </div>
+      <div>
+        <div class="kat-box"><div class="kat-label">Möbel &amp; Wohnung <span class="vn-word">(đồ nội thất &amp; nhà ở)</span></div></div>
+        <div class="kat-box"><div class="kat-label">Adjektive: Zustand <span class="vn-word">(trạng thái)</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 6–10</span>
+    <span>Seite 2 / 7</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 3 / 7 — TEIL B ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 6–10 / Ôn tập: Bài 6–10</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL B — GRAMMATIK</div>
+  <div class="teil-sub">Gemischte Übungen aus allen 5 Lektionen — bewusst <u>nicht</u> nach Lektionen sortiert! / Bài tập ngữ pháp tổng hợp — <u>không</u> sắp xếp theo bài học!</div>
+
+  <div class="ubung-header">🔧 B1 — Verben-Mix (haben, sein, essen, möchten)</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Verbform. Achtung — die Verben wechseln in jedem Satz!</div>
+    <div class="instr-vn">Điền đúng dạng động từ. Chú ý — động từ thay đổi ở mỗi câu!</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Ich <span class="blank"></span> Hunger. <span class="vn-word">(haben)</span></div>
+        <div class="fill-line"><span class="num">2.</span> Du <span class="blank"></span> das Brot. <span class="vn-word">(essen)</span></div>
+        <div class="fill-line"><span class="num">3.</span> Wir <span class="blank"></span> die Jacke. <span class="vn-word">(möchten)</span></div>
+        <div class="fill-line"><span class="num">4.</span> Er <span class="blank"></span> nervös. <span class="vn-word">(sein)</span></div>
+        <div class="fill-line"><span class="num">5.</span> Ihr <span class="blank"></span> Glück! <span class="vn-word">(haben)</span></div>
+        <div class="fill-line"><span class="num">6.</span> Sie (Plural) <span class="blank"></span> den Fisch. <span class="vn-word">(essen)</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">7.</span> Ich <span class="blank"></span> nicht durstig. <span class="vn-word">(sein)</span></div>
+        <div class="fill-line"><span class="num">8.</span> <span class="blank"></span> du das Kleid? <span class="vn-word">(möchten)</span></div>
+        <div class="fill-line"><span class="num">9.</span> Wir <span class="blank"></span> sehr müde. <span class="vn-word">(sein)</span></div>
+        <div class="fill-line"><span class="num">10.</span> Er <span class="blank"></span> ein neues Fahrrad. <span class="vn-word">(haben)</span></div>
+        <div class="fill-line"><span class="num">11.</span> <span class="blank"></span> ihr gern Käse? <span class="vn-word">(essen)</span></div>
+        <div class="fill-line"><span class="num">12.</span> Sie (formell) <span class="blank"></span> die Schuhe. <span class="vn-word">(möchten)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">👪 B2 — Possessivpronomen: „mein" &amp; „dein"</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze mit der richtigen Form von „mein" oder „dein".</div>
+    <div class="instr-vn">Điền đúng dạng của „mein" hoặc „dein".</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Das ist <span class="blank"></span> Bruder. Er heißt Paul. <span class="vn-word">Đây là anh trai tôi.</span></div>
+        <div class="fill-line"><span class="num">2.</span> Ist das <span class="blank"></span> Schwester? <span class="vn-word">Đó có phải là chị gái bạn không?</span></div>
+        <div class="fill-line"><span class="num">3.</span> <span class="blank"></span> Mutter ist Ärztin. <span class="vn-word">Mẹ tôi là bác sĩ.</span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Wie heißt <span class="blank"></span> Vater? <span class="vn-word">Bố bạn tên là gì?</span></div>
+        <div class="fill-line"><span class="num">5.</span> Das sind <span class="blank"></span> Eltern. <span class="vn-word">Đây là cha mẹ tôi.</span></div>
+        <div class="fill-line"><span class="num">6.</span> <span class="blank"></span> Tante wohnt in Berlin. <span class="vn-word">Dì của bạn sống ở Berlin.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 6–10</span>
+    <span>Seite 3 / 7</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 4 / 7 — TEIL B Forts. ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 6–10 / Ôn tập: Bài 6–10</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="ubung-header">🛒 B3 — Akkusativ-Artikel</div>
+  <div class="ubung-body">
+    <div class="instr-de">Schreibe zu jedem Nomen den korrekten Akkusativ-Artikel + Nomen.</div>
+    <div class="instr-vn">Viết mạo từ Akkusativ đúng + danh từ cho mỗi từ.</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Kaffee (der) → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">2.</span> Butter (die) → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">3.</span> Brot (das) → <span class="blank"></span></div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">4.</span> Schrank (der) → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">5.</span> Jacke (die) → <span class="blank"></span></div>
+        <div class="fill-line"><span class="num">6.</span> Hemd (das) → <span class="blank"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ubung-header">📍 B4 — „stehen", „liegen" oder „hängen" + Präposition</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze die richtige Verbform UND die passende Präposition (im / am / in der / an der / auf dem).</div>
+    <div class="instr-vn">Điền đúng dạng động từ VÀ giới từ phù hợp (im / am / in der / an der / auf dem).</div>
+    <div class="fill-line"><span class="num">1.</span> Der Tisch <span class="blank"></span> <span class="blank"></span> Küche. <span class="vn-word">Cái bàn ở trong bếp.</span></div>
+    <div class="fill-line"><span class="num">2.</span> Die Lampe <span class="blank"></span> <span class="blank"></span> Wand. <span class="vn-word">Cái đèn treo trên tường.</span></div>
+    <div class="fill-line"><span class="num">3.</span> Das Sofa <span class="blank"></span> <span class="blank"></span> Wohnzimmer. <span class="vn-word">Ghế sofa ở trong phòng khách.</span></div>
+    <div class="fill-line"><span class="num">4.</span> Der Teppich <span class="blank"></span> <span class="blank"></span> Boden. <span class="vn-word">Tấm thảm trải trên sàn.</span></div>
+    <div class="fill-line"><span class="num">5.</span> Die Bücher <span class="blank"></span> <span class="blank"></span> Regal. <span class="vn-word">Những cuốn sách ở trên kệ.</span></div>
+    <div class="fill-line"><span class="num">6.</span> Das Bild <span class="blank"></span> <span class="blank"></span> Wand. <span class="vn-word">Bức tranh treo trên tường.</span></div>
+    <div class="fill-line"><span class="num">7.</span> Der Stuhl <span class="blank"></span> <span class="blank"></span> Tisch. <span class="vn-word">Cái ghế ở cạnh bàn.</span></div>
+  </div>
+
+  <div class="ubung-header">💰 B5 — „kostet" oder „kosten"?</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze mit „kostet" (Singular) oder „kosten" (Plural).</div>
+    <div class="instr-vn">Hãy điền „kostet" (số ít) hoặc „kosten" (số nhiều).</div>
+    <div class="two-col">
+      <div>
+        <div class="fill-line"><span class="num">1.</span> Der Pullover <span class="blank"></span> 30 Euro.</div>
+        <div class="fill-line"><span class="num">2.</span> Die Schuhe <span class="blank"></span> 55 Euro.</div>
+      </div>
+      <div>
+        <div class="fill-line"><span class="num">3.</span> Das Hemd <span class="blank"></span> 18 Euro.</div>
+        <div class="fill-line"><span class="num">4.</span> Die Socken <span class="blank"></span> 7 Euro.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 6–10</span>
+    <span>Seite 4 / 7</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 5 / 7 — TEIL C ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 6–10 / Ôn tập: Bài 6–10</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL C — SATZBAU</div>
+  <div class="teil-sub">Cấu trúc câu</div>
+
+  <div class="ubung-header">🔀 C1 — Sätze bilden (Wortsalat)</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ordne die Wörter zu einem grammatisch korrekten Satz.</div>
+    <div class="instr-vn">Hãy sắp xếp các từ thành câu đúng ngữ pháp.</div>
+    <div class="wortsalat-block"><div class="wortsalat">1. isst / sie / den / Apfel<span class="vn-word">Cô ấy ăn quả táo.</span></div></div>
+    <div class="wortsalat-block"><div class="wortsalat">2. Mütze / ich / möchte / die<span class="vn-word">Tôi muốn cái mũ len này.</span></div></div>
+    <div class="wortsalat-block"><div class="wortsalat">3. Wand / hängt / an / das / Bild / der<span class="vn-word">Bức tranh treo trên tường.</span></div></div>
+    <div class="wortsalat-block"><div class="wortsalat">4. Hunger / wir / haben<span class="vn-word">Chúng tôi đói.</span></div></div>
+    <div class="wortsalat-block"><div class="wortsalat">5. Bruder / mein / das / ist<span class="vn-word">Đây là anh trai tôi.</span></div></div>
+  </div>
+
+  <div class="ubung-header">🔁 C2 — Umformen</div>
+  <div class="ubung-body">
+    <div class="instr-de">Forme die Sätze/Wörter wie angegeben um.</div>
+    <div class="instr-vn">Hãy chuyển đổi câu/từ theo yêu cầu.</div>
+    <div class="fill-line"><span class="num">1.</span> eine Cousine <span class="vn-word">→ Plural</span> zwei <span class="blank"></span></div>
+    <div class="fill-line"><span class="num">2.</span> ein Onkel <span class="vn-word">→ Plural</span> drei <span class="blank"></span></div>
+    <div class="fill-line"><span class="num">3.</span> ein Sohn <span class="vn-word">→ Plural</span> zwei <span class="blank"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Du hast Angst. <span class="vn-word">→ Ja/Nein-Frage</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">5.</span> Ihr möchtet die Schuhe. <span class="vn-word">→ Ja/Nein-Frage</span> <span class="blank-long"></span></div>
+  </div>
+
+  <div class="ubung-header">🔍 C3 — Fehler finden</div>
+  <div class="ubung-body">
+    <div class="instr-de">Jeder Satz hat einen Fehler. Finde ihn und schreibe den Satz richtig.</div>
+    <div class="instr-vn">Mỗi câu có một lỗi sai. Hãy tìm và viết lại câu cho đúng.</div>
+    <div class="fill-line"><span class="num">1.</span> Ich esse der Apfel. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">2.</span> Er ist Hunger. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">3.</span> Die Lampe steht an der Wand. <span class="vn-word">→</span> <span class="blank-long"></span></div>
+    <div class="fill-line"><span class="num">4.</span> Was kostet die Schuhe? <span class="vn-word">→</span> <span class="blank-long"></span></div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 6–10</span>
+    <span>Seite 5 / 7</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 6 / 7 — TEIL D ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 6–10 / Ôn tập: Bài 6–10</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL D — DIALOGE</div>
+  <div class="teil-sub">Hội thoại</div>
+
+  <div class="ubung-header">💬 D1 — Lücken ergänzen</div>
+  <div class="ubung-body">
+    <div class="instr-de">Ergänze den Dialog mit der richtigen Form von „sein", „haben", „möchten", „stehen" oder „mein".</div>
+    <div class="instr-vn">Điền vào đoạn hội thoại với dạng đúng của các từ trên.</div>
+    <div class="dialog-box">
+      <div class="dialog-sub">Zu Besuch in der neuen Wohnung / Đến thăm căn hộ mới</div>
+      <div class="dialog-line"><span class="speaker">Anna:</span>Hallo! Das ist <span class="blank"></span> neue Wohnung. <span class="vn-word">Xin chào! Đây là căn hộ mới của tôi.</span></div>
+      <div class="dialog-line"><span class="speaker">Ben:</span>Wow, sehr schön! Wo <span class="blank"></span> das Wohnzimmer? <span class="vn-word">Wow, đẹp quá! Phòng khách ở đâu?</span></div>
+      <div class="dialog-line"><span class="speaker">Anna:</span>Es <span class="blank"></span> hier. Das Sofa <span class="blank"></span> direkt an der Wand. <span class="vn-word">Nó ở đây. Ghế sofa đứng ngay cạnh tường.</span></div>
+      <div class="dialog-line"><span class="speaker">Ben:</span><span class="blank"></span> du auch eine Küche? <span class="vn-word">Bạn cũng có bếp chứ?</span></div>
+      <div class="dialog-line"><span class="speaker">Anna:</span>Ja, die Küche ist dort. <span class="blank"></span> du einen Tee? <span class="vn-word">Vâng, bếp ở đằng kia. Bạn có muốn uống trà không?</span></div>
+      <div class="dialog-line"><span class="speaker">Ben:</span>Ja, gerne! Ich <span class="blank"></span> ein bisschen Durst. <span class="vn-word">Có, vui lòng! Tôi hơi khát.</span></div>
+    </div>
+  </div>
+
+  <div class="ubung-header">✍️ D2 — Antworten formulieren</div>
+  <div class="ubung-body">
+    <div class="instr-de">Beantworte die Fragen mit vollständigen Sätzen.</div>
+    <div class="instr-vn">Trả lời các câu hỏi bằng câu hoàn chỉnh.</div>
+    <div class="schreib-line"><span class="num">1.</span> Wie viele Geschwister hast du? </div>
+    <div class="schreib-line"><span class="num">2.</span> Was möchtest du heute essen oder trinken? </div>
+    <div class="schreib-line"><span class="num">3.</span> Wo steht dein Bett? </div>
+    <div class="schreib-line"><span class="num">4.</span> Was für Kleidung trägst du heute? </div>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Lektion 6–10</span>
+    <span>Seite 6 / 7</span>
+  </div>
+</div>
+
+<!-- ═════════════════════════════ SEITE 7 / 7 — TEIL E & ANTWORTEN ═════════════════════════════ -->
+<div class="page">
+  <div class="doc-header">
+    <div>
+      <h1>🇩🇪 Deutsch A1 — Mini-Review</h1>
+      <h2>Wiederholung: Lektion 6–10 / Ôn tập: Bài 6–10</h2>
+    </div>
+    <div class="badge">Mini-Review · Teil A–E</div>
+  </div>
+
+  <div class="teil-title">TEIL E — ÜBERSETZUNG</div>
+  <div class="teil-sub">Dịch câu (Việt → Đức)</div>
+
+  <div class="ubung-header">🌐 E1 — Übersetze ins Deutsche</div>
+  <div class="ubung-body">
+    <div class="schreib-line"><span class="num">1.</span> Đây là em gái tôi. </div>
+    <div class="schreib-line"><span class="num">2.</span> Chúng tôi đói. </div>
+    <div class="schreib-line"><span class="num">3.</span> Tôi ăn bánh mì và uống trà. </div>
+    <div class="schreib-line"><span class="num">4.</span> Chiếc áo khoác giá bao nhiêu? </div>
+    <div class="schreib-line"><span class="num">5.</span> Cái bàn ở trong bếp. </div>
+    <div class="schreib-line"><span class="num">6.</span> Bạn có mệt không? </div>
+  </div>
+
+  <div class="antworten">
+    <h4>✅ ANTWORTEN / Đáp án</h4>
+    <p><strong>A1 (Zuordnen):</strong> 1. c &nbsp; 2. b &nbsp; 3. d &nbsp; 4. e &nbsp; 5. f &nbsp; 6. g &nbsp; 7. a &nbsp; 8. h</p>
+    <p><strong>A2 (Übersetzen):</strong> 1. mua &nbsp; 2. chú/bác/cậu &nbsp; 3. giày &nbsp; 4. tấm thảm &nbsp; 5. glücklich &nbsp; 6. der Schrank &nbsp; 7. die Jacke &nbsp; 8. Was kostet das?</p>
+    <p><strong>A3 (Gegenteile):</strong> 1. e (glücklich) &nbsp; 2. a (satt) &nbsp; 3. b (gesund) &nbsp; 4. c (klein) &nbsp; 5. d (fit) &nbsp; 6. f (entspannt)</p>
+    <p><strong>A4 (Kategorien):</strong> Familie: der Cousin, die Tante, der Sohn &nbsp;·&nbsp; Kleidung: die Jacke, die Mütze, die Hose &nbsp;·&nbsp; Möbel &amp; Wohnung: der Schrank, das Sofa, die Lampe &nbsp;·&nbsp; Adjektive: müde, hungrig, gestresst</p>
+    <p><strong>B1 (Verben-Mix):</strong> 1. habe &nbsp; 2. isst &nbsp; 3. möchten &nbsp; 4. ist &nbsp; 5. habt &nbsp; 6. essen &nbsp; 7. bin &nbsp; 8. Möchtest &nbsp; 9. sind &nbsp; 10. hat &nbsp; 11. Esst &nbsp; 12. möchten</p>
+    <p><strong>B2 (mein/dein):</strong> 1. mein &nbsp; 2. deine &nbsp; 3. Meine &nbsp; 4. dein &nbsp; 5. meine &nbsp; 6. Deine</p>
+    <p><strong>B3 (Akkusativ-Artikel):</strong> 1. den Kaffee &nbsp; 2. die Butter &nbsp; 3. das Brot &nbsp; 4. den Schrank &nbsp; 5. die Jacke &nbsp; 6. das Hemd</p>
+    <p><strong>B4 (stehen/liegen/hängen + Präposition):</strong> 1. steht / in der &nbsp; 2. hängt / an der &nbsp; 3. steht / im &nbsp; 4. liegt / auf dem &nbsp; 5. stehen / auf dem &nbsp; 6. hängt / an der &nbsp; 7. steht / am</p>
+    <p><strong>B5 (kostet/kosten):</strong> 1. kostet &nbsp; 2. kosten &nbsp; 3. kostet &nbsp; 4. kosten</p>
+    <p><strong>C1 (Wortsalat):</strong> 1. Sie isst den Apfel. &nbsp; 2. Ich möchte die Mütze. &nbsp; 3. Das Bild hängt an der Wand. &nbsp; 4. Wir haben Hunger. &nbsp; 5. Das ist mein Bruder.</p>
+    <p><strong>C2 (Umformen):</strong> 1. Cousinen &nbsp; 2. Onkel &nbsp; 3. Söhne &nbsp; 4. Hast du Angst? &nbsp; 5. Möchtet ihr die Schuhe?</p>
+    <p><strong>C3 (Fehler finden):</strong> 1. Ich esse den Apfel. &nbsp; 2. Er hat Hunger. &nbsp; 3. Die Lampe hängt an der Wand. &nbsp; 4. Was kosten die Schuhe?</p>
+    <p><strong>D1 (Dialog):</strong> meine / ist / ist / steht / Hast / Möchtest / habe</p>
+    <p><strong>D2:</strong> Freie Antwort — der Lehrer korrigiert individuell. <span style="font-style:italic;">Câu trả lời tự do — giáo viên chữa trực tiếp.</span></p>
+    <p><strong>E1 (Übersetzung):</strong> 1. Das ist meine Schwester. &nbsp; 2. Wir haben Hunger. &nbsp; 3. Ich esse das Brot und trinke den Tee. &nbsp; 4. Was kostet die Jacke? &nbsp; 5. Der Tisch steht in der Küche. &nbsp; 6. Bist du müde?</p>
+  </div>
+
+  <div class="footer">
+    <span>Deutsch A1 · Mini-Review · Viel Erfolg! / Chúc bạn học tốt!</span>
+    <span>Seite 7 / 7</span>
+  </div>
+</div>
+
+</body>
+</html>
